@@ -1,0 +1,143 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins";
+  box-sizing: border-box;
+}
+
+:root {
+  --blackShade: rgba(0, 0, 0, 0.3);
+  --background: #5900ff;
+  --textColor: #fff;
+  --secondaryBackground: #fff;
+}
+
+body {
+  background-color: var(--background);
+  min-height: 100vh;
+  width: 100%;
+}
+
+.container {
+  width: 100%;
+  padding: 2rem;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  background-color: var(--blackShade);
+}
+
+button,
+input,
+label {
+  border-radius: 0.5rem;
+  font-size: 1.3rem;
+  cursor: pointer;
+  padding: 0.3rem;
+  margin: 0.3rem;
+  background-color: var(--secondaryBackground);
+}
+
+.links {
+  display: grid;
+  grid-template-columns: 25% 25% 25% 25%;
+}
+.link {
+  display: flex;
+  flex-direction: column;
+  color: var(--textColor);
+  margin: 0.5rem;
+  padding: 0.5rem;
+  border-radius: 0.5rem;
+  background-color: var(--blackShade);
+}
+.link span {
+  margin: 0.1rem;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.link a {
+  color: var(--textColor);
+  text-decoration: none;
+  font-size: 1.1rem;
+  margin: 0.1rem;
+}
+.link a:hover {
+  text-decoration: underline;
+}
+.link .anchorDiv {
+  display: flex;
+  align-items: center;
+  height: 25px;
+  margin: 3px;
+}
+.link .anchorDiv img {
+  height: 25px;
+  margin: 2px;
+  cursor: pointer;
+}
+.wrapper {
+  display: none;
+  height: 100vh;
+  width: 100%;
+  background-color: var(--background);
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  color: var(--textColor);
+  font-size: 1.5rem;
+}
+.wrapper .actions {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 100%;
+  height: 10vh;
+}
+.iframeDiv {
+  height: 90vh;
+  width: 100%;
+}
+.iframeDiv iframe {
+  height: 100%;
+  width: 100%;
+  background-color: white;
+}
+
+#menu {
+  display: none;
+  flex-direction: column;
+  width: 200px;
+  background-color: var(--blackShade);
+  padding: 0.5rem;
+  border-radius: 0.5rem;
+  position: absolute;
+}
+#menu button {
+  font-size: 1.1rem;
+}
+@media only screen and (max-width: 700px) {
+  .links {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+  }
+  .link {
+    width: 90%;
+  }
+  .container {
+    align-items: flex-start;
+    padding-left: 10px;
+    width: 100%;
+    flex-direction: column;
+    gap: 10px;
+    height: 60vh;
+  }
+  input {
+    max-width: 80vw;
+  }
+}
