@@ -1,0 +1,1 @@
+.person {	max-width: 24.375rem;	margin-left: auto;	margin-right: auto;}.person-figure {	font-size: 0;}.person-figure + * {	margin-top: 0.9375rem;}@media (min-width: 1200px) {	.person-figure + * {		margin-top: 1.5625rem;	}}.person-position {	margin-top: 0.25rem;	font-style: italic;}

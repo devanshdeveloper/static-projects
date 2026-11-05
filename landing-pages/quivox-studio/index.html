@@ -1,0 +1,2915 @@
+<!DOCTYPE html>
+<html lang="en" class="astro-XVYU6E6R">
+
+<head>
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5837904876467920"
+        crossorigin="anonymous"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width">
+    <link rel="icon" type="image/png"
+        href="https://cdn.discordapp.com/attachments/1193085271974088784/1194182640526446712/Quivox.png?ex=65af6c40&is=659cf740&hm=aa52c718daf6624635e36f9ac5f3a6f525059c93911e0a6c6f88e00b31086c78&">
+    <meta name="generator" content="Astro v1.6.14">
+    <meta name="description" content="Build your custom ideas into real life with Quivox.">
+    <title>Quivox Studio</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Urbanist:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        /*
+! tailwindcss v3.2.4 | MIT License | https://tailwindcss.com
+*/
+        /*
+1. Prevent padding and border from affecting element width. (https://github.com/mozdevs/cssremedy/issues/4)
+2. Allow adding a border to an element by just adding a border-width. (https://github.com/tailwindcss/tailwindcss/pull/116)
+*/
+
+        *,
+        ::before,
+        ::after {
+            box-sizing: border-box;
+            /* 1 */
+            border-width: 0;
+            /* 2 */
+            border-style: solid;
+            /* 2 */
+            border-color: #C6C8CD;
+            /* 2 */
+        }
+
+        ::before,
+        ::after {
+            --tw-content: '';
+        }
+
+        .cookie-popup {
+            display: block;
+            /* Set initial display to block */
+            position: fixed;
+            left: 20px;
+            /* Adjust the distance from the left edge */
+            bottom: 20px;
+            /* Adjust the distance from the bottom edge */
+            z-index: 9999;
+            background-color: #f2f2f2;
+            border-radius: 10px;
+            padding: 10px 20px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+            display: flex;
+            align-items: flex-start;
+            /* Align items vertically at the start */
+            justify-content: space-between;
+            max-width: 300px;
+            /* Adjust the maximum width as needed */
+        }
+
+        .cookie-content {
+            flex: 1;
+            /* Take up remaining space */
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+
+        .cookie-text {
+            color: #333;
+        }
+
+        .cookie-link {
+            color: #007bff;
+            text-decoration: underline;
+            margin-top: 5px;
+        }
+
+        .cookie-close {
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            padding: 5px 10px;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-top: 10px;
+            /* Add margin to separate from text */
+            align-self: flex-end;
+            /* Align to the end of the container */
+        }
+
+        .cookie-logo {
+            width: 32px;
+            height: 32px;
+            margin-right: 10px;
+            /* Add margin to separate from text */
+        }
+
+        /*
+1. Use a consistent sensible line-height in all browsers.
+2. Prevent adjustments of font size after orientation changes in iOS.
+3. Use a more readable tab size.
+4. Use the user's configured `sans` font-family by default.
+5. Use the user's configured `sans` font-feature-settings by default.
+*/
+
+        html {
+            line-height: 1.5;
+            /* 1 */
+            -webkit-text-size-adjust: 100%;
+            /* 2 */
+            -moz-tab-size: 4;
+            /* 3 */
+            -o-tab-size: 4;
+            tab-size: 4;
+            /* 3 */
+            font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+            /* 4 */
+            font-feature-settings: normal;
+            /* 5 */
+        }
+
+        /*
+1. Remove the margin in all browsers.
+2. Inherit line-height from `html` so users can set them as a class directly on the `html` element.
+*/
+
+
+        body {
+            margin: 0;
+            /* 1 */
+            line-height: inherit;
+            /* 2 */
+        }
+
+        /*
+1. Add the correct height in Firefox.
+2. Correct the inheritance of border color in Firefox. (https://bugzilla.mozilla.org/show_bug.cgi?id=190655)
+3. Ensure horizontal rules are visible by default.
+*/
+
+        hr {
+            height: 0;
+            /* 1 */
+            color: inherit;
+            /* 2 */
+            border-top-width: 1px;
+            /* 3 */
+        }
+
+        /*
+Add the correct text decoration in Chrome, Edge, and Safari.
+*/
+
+        abbr:where([title]) {
+            -webkit-text-decoration: underline dotted;
+            text-decoration: underline dotted;
+        }
+
+        /*
+Remove the default font size and weight for headings.
+*/
+
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6 {
+            font-size: inherit;
+            font-weight: inherit;
+        }
+
+        /*
+Reset links to optimize for opt-in styling instead of opt-out.
+*/
+
+
+        .hiring-notice {
+            background-color: #10B981;
+            /* Green background color */
+            color: #fff;
+            /* Text color */
+            font-weight: bold;
+            padding: 3px 5px;
+            /* Smaller padding around text */
+            border-radius: 4px;
+            /* Smaller rounded corners */
+            margin-top: 4px;
+            /* Spacing from the "Quivox Studio" text */
+            margin-left: 0px;
+            /* Move it rightwards */
+            font-size: 12px;
+            /* Smaller font size */
+            transition: transform 0.3s;
+            /* Add transition for animation */
+        }
+
+
+        .hiring-notice:hover {
+            transform: scale(0.7);
+            /* Scale up on hover */
+        }
+
+        a {
+            color: inherit;
+            text-decoration: inherit;
+        }
+
+        /*
+Add the correct font weight in Edge and Safari.
+*/
+
+        b,
+        strong {
+            font-weight: bolder;
+        }
+
+        /*
+1. Use the user's configured `mono` font family by default.
+2. Correct the odd `em` font sizing in all browsers.
+*/
+
+        code,
+        kbd,
+        samp,
+        pre {
+            font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+            /* 1 */
+            font-size: 1em;
+            /* 2 */
+        }
+
+        /*
+Add the correct font size in all browsers.
+*/
+
+        small {
+            font-size: 80%;
+        }
+
+        /*
+Prevent `sub` and `sup` elements from affecting the line height in all browsers.
+*/
+
+        sub,
+        sup {
+            font-size: 75%;
+            line-height: 0;
+            position: relative;
+            vertical-align: baseline;
+        }
+
+        sub {
+            bottom: -0.25em;
+        }
+
+        sup {
+            top: -0.5em;
+        }
+
+        /*
+1. Remove text indentation from table contents in Chrome and Safari. (https://bugs.chromium.org/p/chromium/issues/detail?id=999088, https://bugs.webkit.org/show_bug.cgi?id=201297)
+2. Correct table border color inheritance in all Chrome and Safari. (https://bugs.chromium.org/p/chromium/issues/detail?id=935729, https://bugs.webkit.org/show_bug.cgi?id=195016)
+3. Remove gaps between table borders by default.
+*/
+
+        table {
+            text-indent: 0;
+            /* 1 */
+            border-color: inherit;
+            /* 2 */
+            border-collapse: collapse;
+            /* 3 */
+        }
+
+        /*
+1. Change the font styles in all browsers.
+2. Remove the margin in Firefox and Safari.
+3. Remove default padding in all browsers.
+*/
+
+        button,
+        input,
+        optgroup,
+        select,
+        textarea {
+            font-family: inherit;
+            /* 1 */
+            font-size: 100%;
+            /* 1 */
+            font-weight: inherit;
+            /* 1 */
+            line-height: inherit;
+            /* 1 */
+            color: inherit;
+            /* 1 */
+            margin: 0;
+            /* 2 */
+            padding: 0;
+            /* 3 */
+        }
+
+        /*
+Remove the inheritance of text transform in Edge and Firefox.
+*/
+
+        button,
+        select {
+            text-transform: none;
+        }
+
+        /*
+1. Correct the inability to style clickable types in iOS and Safari.
+2. Remove default button styles.
+*/
+
+        button,
+        [type='button'],
+        [type='reset'],
+        [type='submit'] {
+            -webkit-appearance: button;
+            /* 1 */
+            background-color: transparent;
+            /* 2 */
+            background-image: none;
+            /* 2 */
+        }
+
+        /*
+Use the modern Firefox focus style for all focusable elements.
+*/
+
+        :-moz-focusring {
+            outline: auto;
+        }
+
+        /*
+Remove the additional `:invalid` styles in Firefox. (https://github.com/mozilla/gecko-dev/blob/2f9eacd9d3d995c937b4251a5557d95d494c9be1/layout/style/res/forms.css#L728-L737)
+*/
+
+        :-moz-ui-invalid {
+            box-shadow: none;
+        }
+
+        /*
+Add the correct vertical alignment in Chrome and Firefox.
+*/
+
+        progress {
+            vertical-align: baseline;
+        }
+
+        /*
+Correct the cursor style of increment and decrement buttons in Safari.
+*/
+
+        ::-webkit-inner-spin-button,
+        ::-webkit-outer-spin-button {
+            height: auto;
+        }
+
+        /*
+1. Correct the odd appearance in Chrome and Safari.
+2. Correct the outline style in Safari.
+*/
+
+        [type='search'] {
+            -webkit-appearance: textfield;
+            /* 1 */
+            outline-offset: -2px;
+            /* 2 */
+        }
+
+        /*
+Remove the inner padding in Chrome and Safari on macOS.
+*/
+
+        ::-webkit-search-decoration {
+            -webkit-appearance: none;
+        }
+
+        /*
+1. Correct the inability to style clickable types in iOS and Safari.
+2. Change font properties to `inherit` in Safari.
+*/
+
+        ::-webkit-file-upload-button {
+            -webkit-appearance: button;
+            /* 1 */
+            font: inherit;
+            /* 2 */
+        }
+
+        /*
+Add the correct display in Chrome and Safari.
+*/
+
+        summary {
+            display: list-item;
+        }
+
+        /*
+Removes the default spacing and border for appropriate elements.
+*/
+
+        blockquote,
+        dl,
+        dd,
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6,
+        hr,
+        figure,
+        p,
+        pre {
+            margin: 0;
+        }
+
+        fieldset {
+            margin: 0;
+            padding: 0;
+        }
+
+        legend {
+            padding: 0;
+        }
+
+        ol,
+        ul,
+        menu {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        /*
+Prevent resizing textareas horizontally by default.
+*/
+
+        textarea {
+            resize: vertical;
+        }
+
+        /*
+1. Reset the default placeholder opacity in Firefox. (https://github.com/tailwindlabs/tailwindcss/issues/3300)
+2. Set the default placeholder color to the user's configured gray 400 color.
+*/
+
+        input::-moz-placeholder,
+        textarea::-moz-placeholder {
+            opacity: 1;
+            /* 1 */
+            color: #92959F;
+            /* 2 */
+        }
+
+        input::placeholder,
+        textarea::placeholder {
+            opacity: 1;
+            /* 1 */
+            color: #92959F;
+            /* 2 */
+        }
+
+        /*
+Set the default cursor for buttons.
+*/
+
+        button,
+        [role="button"] {
+            cursor: pointer;
+        }
+
+        /*
+Make sure disabled buttons don't get the pointer cursor.
+*/
+        :disabled {
+            cursor: default;
+        }
+
+        /*
+1. Make replaced elements `display: block` by default. (https://github.com/mozdevs/cssremedy/issues/14)
+2. Add `vertical-align: middle` to align replaced elements more sensibly by default. (https://github.com/jensimmons/cssremedy/issues/14#issuecomment-634934210)
+   This can trigger a poorly considered lint error in some tools but is included by design.
+*/
+
+        img,
+        svg,
+        video,
+        canvas,
+        audio,
+        iframe,
+        embed,
+        object {
+            display: block;
+            /* 1 */
+            vertical-align: middle;
+            /* 2 */
+        }
+
+        /*
+Constrain images and videos to the parent width and preserve their intrinsic aspect ratio. (https://github.com/mozdevs/cssremedy/issues/14)
+*/
+
+        img,
+        video {
+            max-width: 100%;
+            height: auto;
+        }
+
+        /* Make elements with the HTML hidden attribute stay hidden by default */
+        [hidden] {
+            display: none;
+        }
+
+        *,
+        ::before,
+        ::after {
+            --tw-border-spacing-x: 0;
+            --tw-border-spacing-y: 0;
+            --tw-translate-x: 0;
+            --tw-translate-y: 0;
+            --tw-rotate: 0;
+            --tw-skew-x: 0;
+            --tw-skew-y: 0;
+            --tw-scale-x: 1;
+            --tw-scale-y: 1;
+            --tw-pan-x: ;
+            --tw-pan-y: ;
+            --tw-pinch-zoom: ;
+            --tw-scroll-snap-strictness: proximity;
+            --tw-ordinal: ;
+            --tw-slashed-zero: ;
+            --tw-numeric-figure: ;
+            --tw-numeric-spacing: ;
+            --tw-numeric-fraction: ;
+            --tw-ring-inset: ;
+            --tw-ring-offset-width: 0px;
+            --tw-ring-offset-color: #fff;
+            --tw-ring-color: rgb(59 130 246 / 0.5);
+            --tw-ring-offset-shadow: 0 0 #0000;
+            --tw-ring-shadow: 0 0 #0000;
+            --tw-shadow: 0 0 #0000;
+            --tw-shadow-colored: 0 0 #0000;
+            --tw-blur: ;
+            --tw-brightness: ;
+            --tw-contrast: ;
+            --tw-grayscale: ;
+            --tw-hue-rotate: ;
+            --tw-invert: ;
+            --tw-saturate: ;
+            --tw-sepia: ;
+            --tw-drop-shadow: ;
+            --tw-backdrop-blur: ;
+            --tw-backdrop-brightness: ;
+            --tw-backdrop-contrast: ;
+            --tw-backdrop-grayscale: ;
+            --tw-backdrop-hue-rotate: ;
+            --tw-backdrop-invert: ;
+            --tw-backdrop-opacity: ;
+            --tw-backdrop-saturate: ;
+            --tw-backdrop-sepia: ;
+        }
+
+        ::-webkit-backdrop {
+            --tw-border-spacing-x: 0;
+            --tw-border-spacing-y: 0;
+            --tw-translate-x: 0;
+            --tw-translate-y: 0;
+            --tw-rotate: 0;
+            --tw-skew-x: 0;
+            --tw-skew-y: 0;
+            --tw-scale-x: 1;
+            --tw-scale-y: 1;
+            --tw-pan-x: ;
+            --tw-pan-y: ;
+            --tw-pinch-zoom: ;
+            --tw-scroll-snap-strictness: proximity;
+            --tw-ordinal: ;
+            --tw-slashed-zero: ;
+            --tw-numeric-figure: ;
+            --tw-numeric-spacing: ;
+            --tw-numeric-fraction: ;
+            --tw-ring-inset: ;
+            --tw-ring-offset-width: 0px;
+            --tw-ring-offset-color: #fff;
+            --tw-ring-color: rgb(59 130 246 / 0.5);
+            --tw-ring-offset-shadow: 0 0 #0000;
+            --tw-ring-shadow: 0 0 #0000;
+            --tw-shadow: 0 0 #0000;
+            --tw-shadow-colored: 0 0 #0000;
+            --tw-blur: ;
+            --tw-brightness: ;
+            --tw-contrast: ;
+            --tw-grayscale: ;
+            --tw-hue-rotate: ;
+            --tw-invert: ;
+            --tw-saturate: ;
+            --tw-sepia: ;
+            --tw-drop-shadow: ;
+            --tw-backdrop-blur: ;
+            --tw-backdrop-brightness: ;
+            --tw-backdrop-contrast: ;
+            --tw-backdrop-grayscale: ;
+            --tw-backdrop-hue-rotate: ;
+            --tw-backdrop-invert: ;
+            --tw-backdrop-opacity: ;
+            --tw-backdrop-saturate: ;
+            --tw-backdrop-sepia: ;
+        }
+
+        ::backdrop {
+            --tw-border-spacing-x: 0;
+            --tw-border-spacing-y: 0;
+            --tw-translate-x: 0;
+            --tw-translate-y: 0;
+            --tw-rotate: 0;
+            --tw-skew-x: 0;
+            --tw-skew-y: 0;
+            --tw-scale-x: 1;
+            --tw-scale-y: 1;
+            --tw-pan-x: ;
+            --tw-pan-y: ;
+            --tw-pinch-zoom: ;
+            --tw-scroll-snap-strictness: proximity;
+            --tw-ordinal: ;
+            --tw-slashed-zero: ;
+            --tw-numeric-figure: ;
+            --tw-numeric-spacing: ;
+            --tw-numeric-fraction: ;
+            --tw-ring-inset: ;
+            --tw-ring-offset-width: 0px;
+            --tw-ring-offset-color: #fff;
+            --tw-ring-color: rgb(59 130 246 / 0.5);
+            --tw-ring-offset-shadow: 0 0 #0000;
+            --tw-ring-shadow: 0 0 #0000;
+            --tw-shadow: 0 0 #0000;
+            --tw-shadow-colored: 0 0 #0000;
+            --tw-blur: ;
+            --tw-brightness: ;
+            --tw-contrast: ;
+            --tw-grayscale: ;
+            --tw-hue-rotate: ;
+            --tw-invert: ;
+            --tw-saturate: ;
+            --tw-sepia: ;
+            --tw-drop-shadow: ;
+            --tw-backdrop-blur: ;
+            --tw-backdrop-brightness: ;
+            --tw-backdrop-contrast: ;
+            --tw-backdrop-grayscale: ;
+            --tw-backdrop-hue-rotate: ;
+            --tw-backdrop-invert: ;
+            --tw-backdrop-opacity: ;
+            --tw-backdrop-saturate: ;
+            --tw-backdrop-sepia: ;
+        }
+
+        .container {
+            width: 100%;
+        }
+
+        @media (min-width: 640px) {
+
+            .container {
+                max-width: 640px;
+            }
+        }
+
+        @media (min-width: 768px) {
+
+            .container {
+                max-width: 768px;
+            }
+        }
+
+        @media (min-width: 1024px) {
+
+            .container {
+                max-width: 1024px;
+            }
+        }
+
+        @media (min-width: 1280px) {
+
+            .container {
+                max-width: 1280px;
+            }
+        }
+
+        @media (min-width: 1536px) {
+
+            .container {
+                max-width: 1536px;
+            }
+        }
+
+        .invisible {
+            visibility: hidden;
+        }
+
+        .fixed {
+            position: fixed;
+        }
+
+        .absolute {
+            position: absolute;
+        }
+
+        .relative {
+            position: relative;
+        }
+
+        .inset-0 {
+            top: 0px;
+            right: 0px;
+            bottom: 0px;
+            left: 0px;
+        }
+
+        .top-full {
+            top: 100%;
+        }
+
+        .left-0 {
+            left: 0px;
+        }
+
+        .z-10 {
+            z-index: 10;
+        }
+
+        .z-20 {
+            z-index: 20;
+        }
+
+        .m-auto {
+            margin: auto;
+        }
+
+        .mx-auto {
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .my-8 {
+            margin-top: 2rem;
+            margin-bottom: 2rem;
+        }
+
+        .mt-2 {
+            margin-top: 0.5rem;
+        }
+
+        .mt-4 {
+            margin-top: 1rem;
+        }
+
+        .ml-3 {
+            margin-left: 0.75rem;
+        }
+
+        .mt-10 {
+            margin-top: 2.5rem;
+        }
+
+        .-mb-10 {
+            margin-bottom: -2.5rem;
+        }
+
+        .mb-3 {
+            margin-bottom: 0.75rem;
+        }
+
+        .mb-10 {
+            margin-bottom: 2.5rem;
+        }
+
+        .mt-3 {
+            margin-top: 0.75rem;
+        }
+
+        .-mr-6 {
+            margin-right: -1.5rem;
+        }
+
+        .mt-12 {
+            margin-top: 3rem;
+        }
+
+        .mt-6 {
+            margin-top: 1.5rem;
+        }
+
+        .mt-16 {
+            margin-top: 4rem;
+        }
+
+        .ml-auto {
+            margin-left: auto;
+        }
+
+        .mt-8 {
+            margin-top: 2rem;
+        }
+
+        .mb-12 {
+            margin-bottom: 3rem;
+        }
+
+        .mb-8 {
+            margin-bottom: 2rem;
+        }
+
+        .mb-20 {
+            margin-bottom: 5rem;
+        }
+
+        .mb-40 {
+            margin-bottom: 10rem;
+        }
+
+        .block {
+            display: block;
+        }
+
+        .inline-block {
+            display: inline-block;
+        }
+
+        .flex {
+            display: flex;
+        }
+
+        .inline-flex {
+            display: inline-flex;
+        }
+
+        .grid {
+            display: grid;
+        }
+
+        .hidden {
+            display: none;
+        }
+
+        .aspect-auto {
+            aspect-ratio: auto;
+        }
+
+        .h-5 {
+            height: 1.25rem;
+        }
+
+        .h-10 {
+            height: 2.5rem;
+        }
+
+        .h-0\.5 {
+            height: 0.125rem;
+        }
+
+        .h-0 {
+            height: 0px;
+        }
+
+        .h-screen {
+            height: 100vh;
+        }
+
+        .h-9 {
+            height: 2.25rem;
+        }
+
+        .h-max {
+            height: -webkit-max-content;
+            height: -moz-max-content;
+            height: max-content;
+        }
+
+        .h-56 {
+            height: 14rem;
+        }
+
+        .h-32 {
+            height: 8rem;
+        }
+
+        .h-8 {
+            height: 2rem;
+        }
+
+        .h-12 {
+            height: 3rem;
+        }
+
+        .h-16 {
+            height: 4rem;
+        }
+
+        .h-6 {
+            height: 1.5rem;
+        }
+
+        .h-11 {
+            height: 2.75rem;
+        }
+
+        .h-64 {
+            height: 16rem;
+        }
+
+        .max-h-screen {
+            max-height: 100vh;
+        }
+
+        .max-h-10 {
+            max-height: 2.5rem;
+        }
+
+        .w-full {
+            width: 100%;
+        }
+
+        .w-64 {
+            width: 16rem;
+        }
+
+        .w-5 {
+            width: 1.25rem;
+        }
+
+        .w-10 {
+            width: 2.5rem;
+        }
+
+        .w-screen {
+            width: 100vw;
+        }
+
+        .w-8 {
+            width: 2rem;
+        }
+
+        .w-12 {
+            width: 3rem;
+        }
+
+        .w-16 {
+            width: 4rem;
+        }
+
+        .w-6 {
+            width: 1.5rem;
+        }
+
+        .w-auto {
+            width: auto;
+        }
+
+        .w-5\/6 {
+            width: 83.333333%;
+        }
+
+        .max-w-7xl {
+            max-width: 80rem;
+        }
+
+        .flex-shrink-0 {
+            flex-shrink: 0;
+        }
+
+        .flex-grow {
+            flex-grow: 1;
+        }
+
+        .origin-bottom {
+            transform-origin: bottom;
+        }
+
+        .origin-top {
+            transform-origin: top;
+        }
+
+        .translate-y-1 {
+            --tw-translate-y: 0.25rem;
+            transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+        }
+
+        .translate-y-1\.5 {
+            --tw-translate-y: 0.375rem;
+            transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+        }
+
+        .-translate-y-1 {
+            --tw-translate-y: -0.25rem;
+            transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+        }
+
+        .rotate-45 {
+            --tw-rotate: 45deg;
+            transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+        }
+
+        .-rotate-45 {
+            --tw-rotate: -45deg;
+            transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+        }
+
+        .scale-95 {
+            --tw-scale-x: .95;
+            --tw-scale-y: .95;
+            transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+        }
+
+        .scale-y-0 {
+            --tw-scale-y: 0;
+            transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+        }
+
+        .cursor-pointer {
+            cursor: pointer;
+        }
+
+        .list-none {
+            list-style-type: none;
+        }
+
+        .grid-cols-2 {
+            grid-template-columns: repeat(2, minmax(0, 1fr));
+        }
+
+        .grid-cols-3 {
+            grid-template-columns: repeat(3, minmax(0, 1fr));
+        }
+
+        .flex-row-reverse {
+            flex-direction: row-reverse;
+        }
+
+        .flex-col {
+            flex-direction: column;
+        }
+
+        .flex-wrap {
+            flex-wrap: wrap;
+        }
+
+        .items-end {
+            align-items: flex-end;
+        }
+
+        .items-center {
+            align-items: center;
+        }
+
+        .justify-end {
+            justify-content: flex-end;
+        }
+
+        .justify-center {
+            justify-content: center;
+        }
+
+        .justify-between {
+            justify-content: space-between;
+        }
+
+        .gap-6 {
+            gap: 1.5rem;
+        }
+
+        .gap-8 {
+            gap: 2rem;
+        }
+
+        .gap-4 {
+            gap: 1rem;
+        }
+
+        .gap-y-4 {
+            row-gap: 1rem;
+        }
+
+        .gap-x-6 {
+            -moz-column-gap: 1.5rem;
+            column-gap: 1.5rem;
+        }
+
+        .space-x-2> :not([hidden])~ :not([hidden]) {
+            --tw-space-x-reverse: 0;
+            margin-right: calc(0.5rem * var(--tw-space-x-reverse));
+            margin-left: calc(0.5rem * calc(1 - var(--tw-space-x-reverse)));
+        }
+
+        .-space-x-52> :not([hidden])~ :not([hidden]) {
+            --tw-space-x-reverse: 0;
+            margin-right: calc(-13rem * var(--tw-space-x-reverse));
+            margin-left: calc(-13rem * calc(1 - var(--tw-space-x-reverse)));
+        }
+
+        .-space-x-2> :not([hidden])~ :not([hidden]) {
+            --tw-space-x-reverse: 0;
+            margin-right: calc(-0.5rem * var(--tw-space-x-reverse));
+            margin-left: calc(-0.5rem * calc(1 - var(--tw-space-x-reverse)));
+        }
+
+        .space-y-6> :not([hidden])~ :not([hidden]) {
+            --tw-space-y-reverse: 0;
+            margin-top: calc(1.5rem * calc(1 - var(--tw-space-y-reverse)));
+            margin-bottom: calc(1.5rem * var(--tw-space-y-reverse));
+        }
+
+        .space-y-8> :not([hidden])~ :not([hidden]) {
+            --tw-space-y-reverse: 0;
+            margin-top: calc(2rem * calc(1 - var(--tw-space-y-reverse)));
+            margin-bottom: calc(2rem * var(--tw-space-y-reverse));
+        }
+
+        .space-y-2> :not([hidden])~ :not([hidden]) {
+            --tw-space-y-reverse: 0;
+            margin-top: calc(0.5rem * calc(1 - var(--tw-space-y-reverse)));
+            margin-bottom: calc(0.5rem * var(--tw-space-y-reverse));
+        }
+
+        .space-y-4> :not([hidden])~ :not([hidden]) {
+            --tw-space-y-reverse: 0;
+            margin-top: calc(1rem * calc(1 - var(--tw-space-y-reverse)));
+            margin-bottom: calc(1rem * var(--tw-space-y-reverse));
+        }
+
+        .space-y-40> :not([hidden])~ :not([hidden]) {
+            --tw-space-y-reverse: 0;
+            margin-top: calc(10rem * calc(1 - var(--tw-space-y-reverse)));
+            margin-bottom: calc(10rem * var(--tw-space-y-reverse));
+        }
+
+        .divide-x> :not([hidden])~ :not([hidden]) {
+            --tw-divide-x-reverse: 0;
+            border-right-width: calc(1px * var(--tw-divide-x-reverse));
+            border-left-width: calc(1px * calc(1 - var(--tw-divide-x-reverse)));
+        }
+
+        .divide-y> :not([hidden])~ :not([hidden]) {
+            --tw-divide-y-reverse: 0;
+            border-top-width: calc(1px * calc(1 - var(--tw-divide-y-reverse)));
+            border-bottom-width: calc(1px * var(--tw-divide-y-reverse));
+        }
+
+        .divide-gray-100> :not([hidden])~ :not([hidden]) {
+            --tw-divide-opacity: 1;
+            border-color: rgb(233 233 236 / var(--tw-divide-opacity));
+        }
+
+        .overflow-hidden {
+            overflow: hidden;
+        }
+
+        .rounded-full {
+            border-radius: 9999px;
+        }
+
+        .rounded {
+            border-radius: 0.25rem;
+        }
+
+        .rounded-3xl {
+            border-radius: 1.5rem;
+        }
+
+        .rounded-xl {
+            border-radius: 0.75rem;
+        }
+
+        .border {
+            border-width: 1px;
+        }
+
+        .border-y {
+            border-top-width: 1px;
+            border-bottom-width: 1px;
+        }
+
+        .border-gray-100 {
+            --tw-border-opacity: 1;
+            border-color: rgb(233 233 236 / var(--tw-border-opacity));
+        }
+
+        .bg-white {
+            --tw-bg-opacity: 1;
+            background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+        }
+
+        .bg-gray-300 {
+            --tw-bg-opacity: 1;
+            background-color: rgb(172 174 182 / var(--tw-bg-opacity));
+        }
+
+        .bg-sky-900 {
+            --tw-bg-opacity: 1;
+            background-color: rgb(12 74 110 / var(--tw-bg-opacity));
+        }
+
+        .bg-white\/70 {
+            background-color: rgb(255 255 255 / 0.7);
+        }
+
+        .bg-gray-50 {
+            --tw-bg-opacity: 1;
+            background-color: rgb(250 250 252 / var(--tw-bg-opacity));
+        }
+
+        .bg-indigo-100 {
+            --tw-bg-opacity: 1;
+            background-color: rgb(224 231 255 / var(--tw-bg-opacity));
+        }
+
+        .bg-teal-100 {
+            --tw-bg-opacity: 1;
+            background-color: rgb(204 251 241 / var(--tw-bg-opacity));
+        }
+
+        .bg-opacity-50 {
+            --tw-bg-opacity: 0.5;
+        }
+
+        .bg-gradient-to-br {
+            background-image: linear-gradient(to bottom right, var(--tw-gradient-stops));
+        }
+
+        .bg-gradient-to-r {
+            background-image: linear-gradient(to right, var(--tw-gradient-stops));
+        }
+
+        .from-primary {
+            --tw-gradient-from: #9333EA;
+            --tw-gradient-to: rgb(147 51 234 / 0);
+            --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
+        }
+
+        .from-cyan-400 {
+            --tw-gradient-from: #22d3ee;
+            --tw-gradient-to: rgb(34 211 238 / 0);
+            --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
+        }
+
+        .to-purple-400 {
+            --tw-gradient-to: #c084fc;
+        }
+
+        .to-sky-300 {
+            --tw-gradient-to: #7dd3fc;
+        }
+
+        .object-cover {
+            -o-object-fit: cover;
+            object-fit: cover;
+        }
+
+        .object-top {
+            -o-object-position: top;
+            object-position: top;
+        }
+
+        .p-6 {
+            padding: 1.5rem;
+        }
+
+        .p-8 {
+            padding: 2rem;
+        }
+
+        .p-4 {
+            padding: 1rem;
+        }
+
+        .px-5 {
+            padding-left: 1.25rem;
+            padding-right: 1.25rem;
+        }
+
+        .py-24 {
+            padding-top: 6rem;
+            padding-bottom: 6rem;
+        }
+
+        .px-4 {
+            padding-left: 1rem;
+            padding-right: 1rem;
+        }
+
+        .py-4 {
+            padding-top: 1rem;
+            padding-bottom: 1rem;
+        }
+
+        .py-2 {
+            padding-top: 0.5rem;
+            padding-bottom: 0.5rem;
+        }
+
+        .py-16 {
+            padding-top: 4rem;
+            padding-bottom: 4rem;
+        }
+
+        .px-8 {
+            padding-left: 2rem;
+            padding-right: 2rem;
+        }
+
+        .px-6 {
+            padding-left: 1.5rem;
+            padding-right: 1.5rem;
+        }
+
+        .py-12 {
+            padding-top: 3rem;
+            padding-bottom: 3rem;
+        }
+
+        .py-8 {
+            padding-top: 2rem;
+            padding-bottom: 2rem;
+        }
+
+        .pt-36 {
+            padding-top: 9rem;
+        }
+
+        .pt-4 {
+            padding-top: 1rem;
+        }
+
+        .text-left {
+            text-align: left;
+        }
+
+        .text-center {
+            text-align: center;
+        }
+
+        .text-sm {
+            font-size: 0.875rem;
+            line-height: 1.25rem;
+        }
+
+        .text-2xl {
+            font-size: 1.5rem;
+            line-height: 2rem;
+        }
+
+        .text-4xl {
+            font-size: 2.25rem;
+            line-height: 2.5rem;
+        }
+
+        .text-xl {
+            font-size: 1.25rem;
+            line-height: 1.75rem;
+        }
+
+        .text-base {
+            font-size: 1rem;
+            line-height: 1.5rem;
+        }
+
+        .text-5xl {
+            font-size: 3rem;
+            line-height: 1;
+        }
+
+        .text-lg {
+            font-size: 1.125rem;
+            line-height: 1.75rem;
+        }
+
+        .text-3xl {
+            font-size: 1.875rem;
+            line-height: 2.25rem;
+        }
+
+        .font-medium {
+            font-weight: 500;
+        }
+
+        .font-bold {
+            font-weight: 700;
+        }
+
+        .font-semibold {
+            font-weight: 600;
+        }
+
+        .uppercase {
+            text-transform: uppercase;
+        }
+
+        .capitalize {
+            text-transform: capitalize;
+        }
+
+        .tracking-widest {
+            letter-spacing: 0.1em;
+        }
+
+        .tracking-wide {
+            letter-spacing: 0.025em;
+        }
+
+        .text-gray-700 {
+            --tw-text-opacity: 1;
+            color: rgb(67 73 89 / var(--tw-text-opacity));
+        }
+
+        .text-gray-900 {
+            --tw-text-opacity: 1;
+            color: rgb(15 23 42 / var(--tw-text-opacity));
+        }
+
+        .text-gray-500 {
+            --tw-text-opacity: 1;
+            color: rgb(119 124 135 / var(--tw-text-opacity));
+        }
+
+        .text-gray-600 {
+            --tw-text-opacity: 1;
+            color: rgb(93 99 112 / var(--tw-text-opacity));
+        }
+
+        .text-white {
+            --tw-text-opacity: 1;
+            color: rgb(255 255 255 / var(--tw-text-opacity));
+        }
+
+        .text-gray-800 {
+            --tw-text-opacity: 1;
+            color: rgb(41 48 65 / var(--tw-text-opacity));
+        }
+
+        .text-secondary {
+            --tw-text-opacity: 1;
+            color: rgb(234 147 51 / var(--tw-text-opacity));
+        }
+
+        .text-primary {
+            --tw-text-opacity: 1;
+            color: rgb(147 51 234 / var(--tw-text-opacity));
+        }
+
+        .text-info {
+            --tw-text-opacity: 1;
+            color: rgb(12 99 231 / var(--tw-text-opacity));
+        }
+
+        .text-sky-500 {
+            --tw-text-opacity: 1;
+            color: rgb(14 165 233 / var(--tw-text-opacity));
+        }
+
+        .text-indigo-500 {
+            --tw-text-opacity: 1;
+            color: rgb(99 102 241 / var(--tw-text-opacity));
+        }
+
+        .text-teal-600 {
+            --tw-text-opacity: 1;
+            color: rgb(13 148 136 / var(--tw-text-opacity));
+        }
+
+        .opacity-0 {
+            opacity: 0;
+        }
+
+        .opacity-40 {
+            opacity: 0.4;
+        }
+
+        .shadow-2xl {
+            --tw-shadow: 0 25px 50px -12px rgb(0 0 0 / 0.25);
+            --tw-shadow-colored: 0 25px 50px -12px var(--tw-shadow-color);
+            box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+        }
+
+        .shadow-gray-600\/10 {
+            --tw-shadow-color: rgb(93 99 112 / 0.1);
+            --tw-shadow: var(--tw-shadow-colored);
+        }
+
+        .blur-\[106px\] {
+            --tw-blur: blur(106px);
+            filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
+        }
+
+        .grayscale {
+            --tw-grayscale: grayscale(100%);
+            filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
+        }
+
+        .backdrop-blur-2xl {
+            --tw-backdrop-blur: blur(40px);
+            -webkit-backdrop-filter: var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia);
+            backdrop-filter: var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia);
+        }
+
+        .transition {
+            transition-property: color, background-color, border-color, fill, stroke, opacity, box-shadow, transform, filter, -webkit-text-decoration-color, -webkit-backdrop-filter;
+            transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter;
+            transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter, -webkit-text-decoration-color, -webkit-backdrop-filter;
+            transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+            transition-duration: 150ms;
+        }
+
+        .transition-all {
+            transition-property: all;
+            transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+            transition-duration: 150ms;
+        }
+
+        .duration-300 {
+            transition-duration: 300ms;
+        }
+
+        .duration-500 {
+            transition-duration: 500ms;
+        }
+
+        .duration-200 {
+            transition-duration: 200ms;
+        }
+
+        .before\:absolute::before {
+            content: var(--tw-content);
+            position: absolute;
+        }
+
+        .before\:inset-0::before {
+            content: var(--tw-content);
+            top: 0px;
+            right: 0px;
+            bottom: 0px;
+            left: 0px;
+        }
+
+        .before\:rounded-full::before {
+            content: var(--tw-content);
+            border-radius: 9999px;
+        }
+
+        .before\:border::before {
+            content: var(--tw-content);
+            border-width: 1px;
+        }
+
+        .before\:border-transparent::before {
+            content: var(--tw-content);
+            border-color: transparent;
+        }
+
+        .before\:bg-primary::before {
+            content: var(--tw-content);
+            --tw-bg-opacity: 1;
+            background-color: rgb(147 51 234 / var(--tw-bg-opacity));
+        }
+
+        .before\:bg-primary\/10::before {
+            content: var(--tw-content);
+            background-color: rgb(147 51 234 / 0.1);
+        }
+
+        .before\:bg-gradient-to-b::before {
+            content: var(--tw-content);
+            background-image: linear-gradient(to bottom, var(--tw-gradient-stops));
+        }
+
+        .before\:transition::before {
+            content: var(--tw-content);
+            transition-property: color, background-color, border-color, fill, stroke, opacity, box-shadow, transform, filter, -webkit-text-decoration-color, -webkit-backdrop-filter;
+            transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter;
+            transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter, -webkit-text-decoration-color, -webkit-backdrop-filter;
+            transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+            transition-duration: 150ms;
+        }
+
+        .before\:duration-300::before {
+            content: var(--tw-content);
+            transition-duration: 300ms;
+        }
+
+        .hover\:z-\[1\]:hover {
+            z-index: 1;
+        }
+
+        .hover\:text-gray-700:hover {
+            --tw-text-opacity: 1;
+            color: rgb(67 73 89 / var(--tw-text-opacity));
+        }
+
+        .hover\:text-gray-900:hover {
+            --tw-text-opacity: 1;
+            color: rgb(15 23 42 / var(--tw-text-opacity));
+        }
+
+        .hover\:text-primary:hover {
+            --tw-text-opacity: 1;
+            color: rgb(147 51 234 / var(--tw-text-opacity));
+        }
+
+        .hover\:shadow-2xl:hover {
+            --tw-shadow: 0 25px 50px -12px rgb(0 0 0 / 0.25);
+            --tw-shadow-colored: 0 25px 50px -12px var(--tw-shadow-color);
+            box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+        }
+
+        .hover\:shadow-gray-600\/10:hover {
+            --tw-shadow-color: rgb(93 99 112 / 0.1);
+            --tw-shadow: var(--tw-shadow-colored);
+        }
+
+        .hover\:grayscale-0:hover {
+            --tw-grayscale: grayscale(0);
+            filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
+        }
+
+        .hover\:before\:scale-105:hover::before {
+            content: var(--tw-content);
+            --tw-scale-x: 1.05;
+            --tw-scale-y: 1.05;
+            transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+        }
+
+        .active\:duration-75:active {
+            transition-duration: 75ms;
+        }
+
+        .active\:before\:scale-95:active::before {
+            content: var(--tw-content);
+            --tw-scale-x: .95;
+            --tw-scale-y: .95;
+            transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+        }
+
+        .group:hover .group-hover\:scale-105 {
+            --tw-scale-x: 1.05;
+            --tw-scale-y: 1.05;
+            transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+        }
+
+        .group:hover .group-hover\:bg-white {
+            --tw-bg-opacity: 1;
+            background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+        }
+
+        .group:hover .group-hover\:text-secondary {
+            --tw-text-opacity: 1;
+            color: rgb(234 147 51 / var(--tw-text-opacity));
+        }
+
+        .peer:checked~.peer-checked\:visible {
+            visibility: visible;
+        }
+
+        .peer:checked~.peer-checked\:origin-top {
+            transform-origin: top;
+        }
+
+        .peer:checked~.peer-checked\:scale-100 {
+            --tw-scale-x: 1;
+            --tw-scale-y: 1;
+            transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+        }
+
+        .peer:checked~.peer-checked\:scale-y-100 {
+            --tw-scale-y: 1;
+            transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+        }
+
+        .peer:checked~.peer-checked\:opacity-100 {
+            opacity: 1;
+        }
+
+        @media (prefers-color-scheme: dark) {
+
+            .dark\:divide-gray-700> :not([hidden])~ :not([hidden]) {
+                --tw-divide-opacity: 1;
+                border-color: rgb(67 73 89 / var(--tw-divide-opacity));
+            }
+
+            .dark\:divide-gray-800> :not([hidden])~ :not([hidden]) {
+                --tw-divide-opacity: 1;
+                border-color: rgb(41 48 65 / var(--tw-divide-opacity));
+            }
+
+            .dark\:border-gray-700 {
+                --tw-border-opacity: 1;
+                border-color: rgb(67 73 89 / var(--tw-border-opacity));
+            }
+
+            .dark\:border-gray-800 {
+                --tw-border-opacity: 1;
+                border-color: rgb(41 48 65 / var(--tw-border-opacity));
+            }
+
+            .dark\:bg-gray-300 {
+                --tw-bg-opacity: 1;
+                background-color: rgb(172 174 182 / var(--tw-bg-opacity));
+            }
+
+            .dark\:bg-gray-900\/70 {
+                background-color: rgb(15 23 42 / 0.7);
+            }
+
+            .dark\:bg-gray-800 {
+                --tw-bg-opacity: 1;
+                background-color: rgb(41 48 65 / var(--tw-bg-opacity));
+            }
+
+            .dark\:bg-gray-900 {
+                --tw-bg-opacity: 1;
+                background-color: rgb(15 23 42 / var(--tw-bg-opacity));
+            }
+
+            .dark\:bg-indigo-900\/20 {
+                background-color: rgb(49 46 129 / 0.2);
+            }
+
+            .dark\:bg-teal-900\/20 {
+                background-color: rgb(19 78 74 / 0.2);
+            }
+
+            .dark\:from-blue-700 {
+                --tw-gradient-from: #1d4ed8;
+                --tw-gradient-to: rgb(29 78 216 / 0);
+                --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
+            }
+
+            .dark\:to-indigo-600 {
+                --tw-gradient-to: #4f46e5;
+            }
+
+            .dark\:text-white {
+                --tw-text-opacity: 1;
+                color: rgb(255 255 255 / var(--tw-text-opacity));
+            }
+
+            .dark\:text-gray-300 {
+                --tw-text-opacity: 1;
+                color: rgb(172 174 182 / var(--tw-text-opacity));
+            }
+
+            .dark\:text-blue-300 {
+                --tw-text-opacity: 1;
+                color: rgb(147 197 253 / var(--tw-text-opacity));
+            }
+
+            .dark\:text-indigo-400 {
+                --tw-text-opacity: 1;
+                color: rgb(129 140 248 / var(--tw-text-opacity));
+            }
+
+            .dark\:text-indigo-300 {
+                --tw-text-opacity: 1;
+                color: rgb(165 180 252 / var(--tw-text-opacity));
+            }
+
+            .dark\:text-gray-400 {
+                --tw-text-opacity: 1;
+                color: rgb(146 149 159 / var(--tw-text-opacity));
+            }
+
+            .dark\:text-teal-400 {
+                --tw-text-opacity: 1;
+                color: rgb(45 212 191 / var(--tw-text-opacity));
+            }
+
+            .dark\:text-teal-300 {
+                --tw-text-opacity: 1;
+                color: rgb(94 234 212 / var(--tw-text-opacity));
+            }
+
+            .dark\:opacity-20 {
+                opacity: 0.2;
+            }
+
+            .dark\:shadow-none {
+                --tw-shadow: 0 0 #0000;
+                --tw-shadow-colored: 0 0 #0000;
+                box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+            }
+
+            .dark\:before\:border-gray-700::before {
+                content: var(--tw-content);
+                --tw-border-opacity: 1;
+                border-color: rgb(67 73 89 / var(--tw-border-opacity));
+            }
+
+            .dark\:before\:bg-gray-800::before {
+                content: var(--tw-content);
+                --tw-bg-opacity: 1;
+                background-color: rgb(41 48 65 / var(--tw-bg-opacity));
+            }
+
+            .group:hover .dark\:group-hover\:bg-gray-800 {
+                --tw-bg-opacity: 1;
+                background-color: rgb(41 48 65 / var(--tw-bg-opacity));
+            }
+        }
+
+        @media (min-width: 640px) {
+
+            .sm\:ml-auto {
+                margin-left: auto;
+            }
+
+            .sm\:mt-0 {
+                margin-top: 0px;
+            }
+
+            .sm\:flex {
+                display: flex;
+            }
+
+            .sm\:w-max {
+                width: -webkit-max-content;
+                width: -moz-max-content;
+                width: max-content;
+            }
+
+            .sm\:grid-cols-2 {
+                grid-template-columns: repeat(2, minmax(0, 1fr));
+            }
+
+            .sm\:grid-cols-4 {
+                grid-template-columns: repeat(4, minmax(0, 1fr));
+            }
+
+            .sm\:justify-start {
+                justify-content: flex-start;
+            }
+
+            .sm\:p-8 {
+                padding: 2rem;
+            }
+        }
+
+        @media (min-width: 768px) {
+
+            .md\:mx-0 {
+                margin-left: 0px;
+                margin-right: 0px;
+            }
+
+            .md\:mt-0 {
+                margin-top: 0px;
+            }
+
+            .md\:flex {
+                display: flex;
+            }
+
+            .md\:w-1\/2 {
+                width: 50%;
+            }
+
+            .md\:w-8\/12 {
+                width: 66.666667%;
+            }
+
+            .md\:w-2\/3 {
+                width: 66.666667%;
+            }
+
+            .md\:columns-2 {
+                -moz-columns: 2;
+                columns: 2;
+            }
+
+            .md\:grid-cols-6 {
+                grid-template-columns: repeat(6, minmax(0, 1fr));
+            }
+
+            .md\:grid-cols-2 {
+                grid-template-columns: repeat(2, minmax(0, 1fr));
+            }
+
+            .md\:flex-row {
+                flex-direction: row;
+            }
+
+            .md\:items-center {
+                align-items: center;
+            }
+
+            .md\:gap-0 {
+                gap: 0px;
+            }
+
+            .md\:gap-6 {
+                gap: 1.5rem;
+            }
+
+            .md\:space-y-0> :not([hidden])~ :not([hidden]) {
+                --tw-space-y-reverse: 0;
+                margin-top: calc(0px * calc(1 - var(--tw-space-y-reverse)));
+                margin-bottom: calc(0px * var(--tw-space-y-reverse));
+            }
+
+            .md\:py-4 {
+                padding-top: 1rem;
+                padding-bottom: 1rem;
+            }
+
+            .md\:px-0 {
+                padding-left: 0px;
+                padding-right: 0px;
+            }
+
+            .md\:px-4 {
+                padding-left: 1rem;
+                padding-right: 1rem;
+            }
+
+            .md\:px-12 {
+                padding-left: 3rem;
+                padding-right: 3rem;
+            }
+
+            .md\:pl-20 {
+                padding-left: 5rem;
+            }
+
+            .md\:text-left {
+                text-align: left;
+            }
+
+            .md\:text-5xl {
+                font-size: 3rem;
+                line-height: 1;
+            }
+
+            .md\:text-4xl {
+                font-size: 2.25rem;
+                line-height: 2.5rem;
+            }
+
+            .md\:text-6xl {
+                font-size: 3.75rem;
+                line-height: 1;
+            }
+        }
+
+        @media (min-width: 1024px) {
+
+            .lg\:visible {
+                visibility: visible;
+            }
+
+            .lg\:relative {
+                position: relative;
+            }
+
+            .lg\:mx-auto {
+                margin-left: auto;
+                margin-right: auto;
+            }
+
+            .lg\:mt-0 {
+                margin-top: 0px;
+            }
+
+            .lg\:flex {
+                display: flex;
+            }
+
+            .lg\:hidden {
+                display: none;
+            }
+
+            .lg\:w-1\/4 {
+                width: 25%;
+            }
+
+            .lg\:w-max {
+                width: -webkit-max-content;
+                width: -moz-max-content;
+                width: max-content;
+            }
+
+            .lg\:w-7\/12 {
+                width: 58.333333%;
+            }
+
+            .lg\:w-auto {
+                width: auto;
+            }
+
+            .lg\:w-1\/2 {
+                width: 50%;
+            }
+
+            .lg\:w-2\/3 {
+                width: 66.666667%;
+            }
+
+            .lg\:w-6\/12 {
+                width: 50%;
+            }
+
+            .lg\:translate-y-0 {
+                --tw-translate-y: 0px;
+                transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+            }
+
+            .lg\:scale-100 {
+                --tw-scale-x: 1;
+                --tw-scale-y: 1;
+                transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+            }
+
+            .lg\:columns-3 {
+                -moz-columns: 3;
+                columns: 3;
+            }
+
+            .lg\:grid-cols-4 {
+                grid-template-columns: repeat(4, minmax(0, 1fr));
+            }
+
+            .lg\:grid-cols-3 {
+                grid-template-columns: repeat(3, minmax(0, 1fr));
+            }
+
+            .lg\:flex-row {
+                flex-direction: row;
+            }
+
+            .lg\:items-start {
+                align-items: flex-start;
+            }
+
+            .lg\:items-center {
+                align-items: center;
+            }
+
+            .lg\:gap-0 {
+                gap: 0px;
+            }
+
+            .lg\:gap-12 {
+                gap: 3rem;
+            }
+
+            .lg\:divide-y-0> :not([hidden])~ :not([hidden]) {
+                --tw-divide-y-reverse: 0;
+                border-top-width: calc(0px * calc(1 - var(--tw-divide-y-reverse)));
+                border-bottom-width: calc(0px * var(--tw-divide-y-reverse));
+            }
+
+            .lg\:border-none {
+                border-style: none;
+            }
+
+            .lg\:bg-transparent {
+                background-color: transparent;
+            }
+
+            .lg\:p-0 {
+                padding: 0px;
+            }
+
+            .lg\:pr-4 {
+                padding-right: 1rem;
+            }
+
+            .lg\:pt-0 {
+                padding-top: 0px;
+            }
+
+            .lg\:text-sm {
+                font-size: 0.875rem;
+                line-height: 1.25rem;
+            }
+
+            .lg\:opacity-100 {
+                opacity: 1;
+            }
+
+            .lg\:shadow-none {
+                --tw-shadow: 0 0 #0000;
+                --tw-shadow-colored: 0 0 #0000;
+                box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+            }
+
+            .peer:checked~.lg\:peer-checked\:translate-y-0 {
+                --tw-translate-y: 0px;
+                transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+            }
+        }
+
+        @media (min-width: 1280px) {
+
+            .xl\:grid-cols-4 {
+                grid-template-columns: repeat(4, minmax(0, 1fr));
+            }
+
+            .xl\:px-6 {
+                padding-left: 1.5rem;
+                padding-right: 1.5rem;
+            }
+
+            .xl\:text-center {
+                text-align: center;
+            }
+
+            .xl\:text-7xl {
+                font-size: 4.5rem;
+                line-height: 1;
+            }
+        }
+    </style>
+    <style>
+        #toggle_nav:where(.astro-CIC4YEP4):checked~div:where(.astro-CIC4YEP4) #hamburger:where(.astro-CIC4YEP4) #line:where(.astro-CIC4YEP4) {
+            --tw-translate-y: 0.375rem;
+            --tw-rotate: 45deg;
+            transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y))
+        }
+
+        #toggle_nav:where(.astro-CIC4YEP4):checked~div:where(.astro-CIC4YEP4) #hamburger:where(.astro-CIC4YEP4) #line2:where(.astro-CIC4YEP4) {
+            --tw-translate-y: -0.25rem;
+            --tw-rotate: -45deg;
+            transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y))
+        }
+    </style>
+    <style>
+        html {
+            font-family: Urbanist, sans-serif;
+            scroll-behavior: smooth
+        }
+
+        body {
+            margin: 0
+        }
+    </style>
+</head>
+
+<body class="bg-white dark:bg-gray-900 astro-XVYU6E6R">
+
+    <!--- Cookie --->
+    <div id="cookie-popup" class="cookie-popup">
+        <img src="https://gethugothemes.com/_next/image?url=%2Fimages%2Fcookie.png&w=32&q=75" alt="Cookie Logo"
+            class="cookie-logo">
+        <div class="cookie-content">
+            <div class="cookie-text">
+                <span>
+                    This website uses cookies. By using this website, you automatically accept that.
+                </span>
+                <span>
+                    Check our <a href="https://quivoxstudio.cloud/toc/" class="cookie-link">privacy policy</a>
+                </span>
+            </div>
+            <button id="cookie-close" class="cookie-close">Got it</button>
+        </div>
+    </div>
+    <!--- Cookie --->
+    <header class="astro-CIC4YEP4">
+        <nav class="z-10 w-full absolute astro-CIC4YEP4">
+            <div class="max-w-7xl mx-auto px-6 md:px-12 xl:px-6">
+                <div
+                    class="flex flex-wrap items-center justify-between py-2 gap-6 md:py-4 md:gap-0 relative astro-CIC4YEP4">
+                    <input aria-hidden="true" type="checkbox" name="toggle_nav" id="toggle_nav"
+                        class="hidden peer astro-CIC4YEP4">
+                    <div class="relative z-20 w-full flex justify-between lg:w-max md:px-0 astro-CIC4YEP4">
+                        <a href="#home" aria-label="logo" class="flex space-x-2 items-center astro-CIC4YEP4">
+                            <img src="https://cdn.discordapp.com/attachments/1193085271974088784/1194182640526446712/Quivox.png?ex=65af6c40&is=659cf740&hm=aa52c718daf6624635e36f9ac5f3a6f525059c93911e0a6c6f88e00b31086c78&"
+                                alt="Quivox Logo" class="h-10 w-10 rounded-full astro-CIC4YEP4">
+                            <span class="text-2xl font-bold text-gray-900 dark:text-white astro-CIC4YEP4">Quivox
+                                Studio</span>
+
+                        </a>
+
+
+
+                        <div class="relative flex items-center lg:hidden max-h-10 astro-CIC4YEP4">
+                            <label role="button" for="toggle_nav" aria-label="humburger" id="hamburger"
+                                class="relative  p-6 -mr-6 astro-CIC4YEP4">
+                                <div aria-hidden="true" id="line"
+                                    class="m-auto h-0.5 w-5 rounded bg-sky-900 dark:bg-gray-300 transition duration-300 astro-CIC4YEP4">
+                                </div>
+                                <div aria-hidden="true" id="line2"
+                                    class="m-auto mt-2 h-0.5 w-5 rounded bg-sky-900 dark:bg-gray-300 transition duration-300 astro-CIC4YEP4">
+                                </div>
+                            </label>
+                        </div>
+                    </div>
+                    <div class="hiring-notice astro-CIC4YEP4">
+                        <span>We are hiring</span>
+                    </div>
+                    <div aria-hidden="true"
+                        class="fixed z-10 inset-0 h-screen w-screen bg-white/70 backdrop-blur-2xl origin-bottom scale-y-0 transition duration-500 peer-checked:origin-top peer-checked:scale-y-100 lg:hidden dark:bg-gray-900/70 astro-CIC4YEP4">
+                    </div>
+                    <div class="flex-col z-20 flex-wrap gap-6 p-8 rounded-3xl border border-gray-100 bg-white shadow-2xl shadow-gray-600/10 justify-end w-full invisible opacity-0 translate-y-1  absolute top-full left-0 transition-all duration-300 scale-95 origin-top 
+                            lg:relative lg:scale-100 lg:peer-checked:translate-y-0 lg:translate-y-0 lg:flex lg:flex-row lg:items-center lg:gap-0 lg:p-0 lg:bg-transparent lg:w-7/12 lg:visible lg:opacity-100 lg:border-none
+                            peer-checked:scale-100 peer-checked:opacity-100 peer-checked:visible lg:shadow-none 
+                            dark:shadow-none dark:bg-gray-800 dark:border-gray-700 astro-CIC4YEP4">
+
+                        <div class="text-gray-600 dark:text-gray-300 lg:pr-4 lg:w-auto w-full lg:pt-0 astro-CIC4YEP4">
+                            <ul
+                                class="tracking-wide font-medium lg:text-sm flex-col flex lg:flex-row gap-6 lg:gap-0 astro-CIC4YEP4">
+                                <li class="astro-CIC4YEP4">
+                                    <a href="#features"
+                                        class="block md:px-4 transition hover:text-primary astro-CIC4YEP4">
+                                        <span class="astro-CIC4YEP4">Features</span>
+                                    </a>
+                                </li>
+
+                                <li class="astro-CIC4YEP4">
+                                    <a href="#testimonials"
+                                        class="block md:px-4 transition hover:text-primary astro-CIC4YEP4">
+                                        <span class="astro-CIC4YEP4">Feedbacks</span>
+                                    </a>
+                                </li>
+                                <li class="astro-CIC4YEP4">
+                                    <a href="https://quivoxstudio.cloud/blog"
+                                        class="block md:px-4 transition hover:text-primary astro-CIC4YEP4">
+                                        <span class="astro-CIC4YEP4">Blog</span>
+                                    </a>
+                                </li>
+                                <li class="astro-CIC4YEP4">
+                                    <a href="#projects"
+                                        class="block md:px-4 transition hover:text-primary astro-CIC4YEP4">
+                                        <span class="astro-CIC4YEP4">Projects</span>
+                                    </a>
+                                </li>
+                                <li class="astro-CIC4YEP4">
+                                    <a href="./new page.html"
+                                        class="block md:px-4 transition hover:text-primary astro-CIC4YEP4">
+                                        <span class="astro-CIC4YEP4">New page</span>
+                                    </a>
+                                </li>
+                                <li class="astro-CIC4YEP4">
+                                    <a href="https://quivoxstudio.cloud/support/"
+                                        class="block md:px-4 transition hover:text-primary astro-CIC4YEP4">
+                                        <span class="astro-CIC4YEP4">Support</span>
+                                    </a>
+                                </li>
+                                <li class="astro-CIC4YEP4">
+                                    <a href="https://quivoxstudio.cloud/donate"
+                                        class="block md:px-4 transition hover:text-primary astro-CIC4YEP4">
+                                        <span class="astro-CIC4YEP4">Donate</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div class="mt-12 lg:mt-0 astro-CIC4YEP4">
+                            <a href="https://quivoxstudio.cloud/order"
+                                class="relative flex h-9 w-full items-center justify-center px-4 before:absolute before:inset-0 before:rounded-full before:bg-primary before:transition before:duration-300 hover:before:scale-105 active:duration-75 active:before:scale-95 sm:w-max astro-CIC4YEP4">
+                                <span class="relative text-sm font-semibold text-white astro-CIC4YEP4">Order now</span>
+                            </a>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main class="space-y-40 mb-40">
+        <div class="relative" id="home">
+            <div aria-hidden="true" class="absolute inset-0 grid grid-cols-2 -space-x-52 opacity-40 dark:opacity-20">
+                <div class="blur-[106px] h-56 bg-gradient-to-br from-primary to-purple-400 dark:from-blue-700"></div>
+                <div class="blur-[106px] h-32 bg-gradient-to-r from-cyan-400 to-sky-300 dark:to-indigo-600"></div>
+            </div>
+            <div class="max-w-7xl mx-auto px-6 md:px-12 xl:px-6">
+                <div class="relative pt-36 ml-auto">
+                    <div class="lg:w-2/3 text-center mx-auto">
+                        <h1 class="text-gray-900 dark:text-white font-bold text-5xl md:text-6xl xl:text-7xl">Where <span
+                                class="text-primary dark:text-white">Ideas</span> Ignite, <span
+                                class="text-primary dark:text-white">Innovation</span> Unfolds.</h1>
+                        <p class="mt-8 text-gray-700 dark:text-gray-300">Explore cutting-edge tech solutions crafted for
+                            you. Our expertise spans customized websites, software, and AI projects. With a
+                            client-centric approach, we ensure tailored innovation, transforming ideas into
+                            technological marvels for a dynamic digital future.</p>
+                        <div class="mt-16 flex flex-wrap justify-center gap-y-4 gap-x-6">
+                            <a href="#"
+                                class="relative flex h-11 w-full items-center justify-center px-6 before:absolute before:inset-0 before:rounded-full before:bg-primary before:transition before:duration-300 hover:before:scale-105 active:duration-75 active:before:scale-95 sm:w-max">
+                                <span class="relative text-base font-semibold text-white">Get started</span>
+                            </a>
+                            <a href="#"
+                                class="relative flex h-11 w-full items-center justify-center px-6 before:absolute before:inset-0 before:rounded-full before:border before:border-transparent before:bg-primary/10 before:bg-gradient-to-b before:transition before:duration-300 hover:before:scale-105 active:duration-75 active:before:scale-95 dark:before:border-gray-700 dark:before:bg-gray-800 sm:w-max">
+                                <span class="relative text-base font-semibold text-primary dark:text-white">Learn
+                                    more</span>
+                            </a>
+                        </div>
+                        <div
+                            class="hidden py-8 mt-16 border-y border-gray-100 dark:border-gray-800 sm:flex justify-between">
+                            <div class="text-left">
+                                <h6 class="text-lg font-semibold text-gray-700 dark:text-white">The Lowest Price</h6>
+                                <p class="mt-2 text-gray-500">Embrace innovation affordably with Quivox Studios'
+                                    advanced Discord bots, AI chatbots, and more, all at unbeatable prices.</p>
+                            </div>
+                            <div class="text-left">
+                                <h6 class="text-lg font-semibold text-gray-700 dark:text-white">Global Humanitarian
+                                    Support</h6>
+                                <p class="mt-2 text-gray-500">Quivox Studios supports vital food aid efforts in Yemen,
+                                    Syria, and Palestine, demonstrating our commitment to global assistance.</p>
+                            </div>
+                            <div class="text-left">
+                                <h6 class="text-lg font-semibold text-gray-700 dark:text-white">The Most Loved</h6>
+                                <p class="mt-2 text-gray-500">Explore Quivox Studios' popular services: custom Discord
+                                    bots, AI chatbots, MC plugins, and websites for your business growth.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- CHANGED -->
+                </div>
+            </div>
+        </div>
+
+
+        <div id="features">
+            <div class="max-w-7xl mx-auto px-6 md:px-12 xl:px-6">
+                <div class="md:w-2/3 lg:w-1/2">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
+                        class="w-6 h-6 text-secondary">
+                        <path fill-rule="evenodd"
+                            d="M9 4.5a.75.75 0 01.721.544l.813 2.846a3.75 3.75 0 002.576 2.576l2.846.813a.75.75 0 010 1.442l-2.846.813a3.75 3.75 0 00-2.576 2.576l-.813 2.846a.75.75 0 01-1.442 0l-.813-2.846a3.75 3.75 0 00-2.576-2.576l-2.846-.813a.75.75 0 010-1.442l2.846-.813A3.75 3.75 0 007.466 7.89l.813-2.846A.75.75 0 019 4.5zM18 1.5a.75.75 0 01.728.568l.258 1.036c.236.94.97 1.674 1.91 1.91l1.036.258a.75.75 0 010 1.456l-1.036.258c-.94.236-1.674.97-1.91 1.91l-.258 1.036a.75.75 0 01-1.456 0l-.258-1.036a2.625 2.625 0 00-1.91-1.91l-1.036-.258a.75.75 0 010-1.456l1.036-.258a2.625 2.625 0 001.91-1.91l.258-1.036A.75.75 0 0118 1.5zM16.5 15a.75.75 0 01.712.513l.394 1.183c.15.447.5.799.948.948l1.183.395a.75.75 0 010 1.422l-1.183.395c-.447.15-.799.5-.948.948l-.395 1.183a.75.75 0 01-1.422 0l-.395-1.183a1.5 1.5 0 00-.948-.948l-1.183-.395a.75.75 0 010-1.422l1.183-.395c.447-.15.799-.5.948-.948l.395-1.183A.75.75 0 0116.5 15z"
+                            clip-rule="evenodd"></path>
+                    </svg>
+
+                    <h2 class="my-8 text-2xl font-bold text-gray-700 dark:text-white md:text-4xl">
+                        Unveiling our latest features
+                    </h2>
+                    <p class="text-gray-600 dark:text-gray-300">Explore our Latest Features: Pioneering tech solutions,
+                        transformative AI projects, and more. Elevate your digital experience with innovation.</p>
+                </div>
+                <div
+                    class="mt-16 grid divide-x divide-y divide-gray-100 dark:divide-gray-700 overflow-hidden rounded-3xl border border-gray-100 text-gray-600 dark:border-gray-700 sm:grid-cols-2 lg:grid-cols-4 lg:divide-y-0 xl:grid-cols-4">
+                    <div
+                        class="group relative bg-gray-50 dark:bg-gray-900 transition hover:z-[1] hover:shadow-2xl hover:shadow-gray-600/10">
+                        <div
+                            class="relative space-y-8 py-12 p-8 transition duration-300 group-hover:bg-white dark:group-hover:bg-gray-800">
+                            <img src="https://cdn-icons-png.flaticon.com/512/4341/4341139.png" class="w-12" width="512"
+                                height="512" alt="custom">
+
+                            <div class="space-y-2">
+                                <h5
+                                    class="text-xl font-semibold text-gray-700 dark:text-white transition group-hover:text-secondary">
+                                    Customized Creations
+                                </h5>
+                                <p class="text-gray-600 dark:text-gray-300">
+
+                                    Creating projects that are tailored to your preferences involves a process of
+                                    understanding your needs, desires, and expectations.
+                                </p>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div
+                        class="group relative bg-gray-50 dark:bg-gray-900 transition hover:z-[1] hover:shadow-2xl hover:shadow-gray-600/10">
+                        <div
+                            class="relative space-y-8 py-12 p-8 transition duration-300 group-hover:bg-white dark:group-hover:bg-gray-800">
+                            <img src="https://cdn.discordapp.com/attachments/1185563135021699112/1194215563057176596/pay.png?ex=65af8ae9&is=659d15e9&hm=3d67f383081247ae1e1f3f630ac951cd04049109dcbd1958a9122c9cdf20b3d6&"
+                                class="w-12" width="512" height="512" alt="burger illustration">
+
+                            <div class="space-y-2">
+                                <h5
+                                    class="text-xl font-semibold text-gray-700 dark:text-white transition group-hover:text-secondary">
+                                    Affordable Price
+                                </h5>
+                                <p class="text-gray-600 dark:text-gray-300">
+                                    A budget-friendly cost tailored to suit your needs, ensuring you get value without
+                                    compromising on quality.
+                                </p>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div
+                        class="group relative bg-gray-50 dark:bg-gray-900 transition hover:z-[1] hover:shadow-2xl hover:shadow-gray-600/10">
+                        <div
+                            class="relative space-y-8 py-12 p-8 transition duration-300 group-hover:bg-white dark:group-hover:bg-gray-800">
+                            <img src="https://cdn-icons-png.flaticon.com/512/4341/4341025.png" class="w-12" width="512"
+                                height="512" alt="ontime">
+
+                            <div class="space-y-2">
+                                <h5
+                                    class="text-xl font-semibold text-gray-700 dark:text-white transition group-hover:text-secondary">
+                                    On-time order completion.
+                                </h5>
+                                <p class="text-gray-600 dark:text-gray-300">
+                                    We prioritize order fulfillment to ensure quick and reliable delivery of products.
+                                    Our streamlined process and team work together.
+                                </p>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div
+                        class="group relative bg-gray-50 dark:bg-gray-900 transition hover:z-[1] hover:shadow-2xl hover:shadow-gray-600/10">
+                        <div
+                            class="relative space-y-8 py-12 p-8 transition duration-300 group-hover:bg-white dark:group-hover:bg-gray-800">
+                            <img src="https://cdn.discordapp.com/attachments/1185563135021699112/1194215563279466598/coding.png?ex=65af8ae9&is=659d15e9&hm=cb60175125fb61fc5f9a0df97635688df699151d5eb92a70d386819439dbe703&"
+                                class="w-12" width="512" height="512" alt="coding">
+
+                            <div class="space-y-2">
+                                <h5
+                                    class="text-xl font-semibold text-gray-700 dark:text-white transition group-hover:text-secondary">
+                                    Experienced developers.
+                                </h5>
+                                <p class="text-gray-600 dark:text-gray-300">
+                                    Talented professionals with extensive experience and creative flair, our developers
+                                    bring expertise to every project.
+                                </p>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="solution">
+            <div class="max-w-7xl mx-auto px-6 md:px-12 xl:px-6">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
+                    class="w-6 h-6 text-sky-500">
+                    <path fill-rule="evenodd"
+                        d="M2.25 13.5a8.25 8.25 0 018.25-8.25.75.75 0 01.75.75v6.75H18a.75.75 0 01.75.75 8.25 8.25 0 01-16.5 0z"
+                        clip-rule="evenodd"></path>
+                    <path fill-rule="evenodd"
+                        d="M12.75 3a.75.75 0 01.75-.75 8.25 8.25 0 018.25 8.25.75.75 0 01-.75.75h-7.5a.75.75 0 01-.75-.75V3z"
+                        clip-rule="evenodd"></path>
+                </svg>
+                <div
+                    class="space-y-6 justify-between text-gray-600 md:flex flex-row-reverse md:gap-6 md:space-y-0 lg:gap-12 lg:items-center">
+                    <div class="md:5/12 lg:w-1/2">
+                        <img src="./images/pie.svg" alt="image" loading="lazy" width="" height="" class="w-full">
+                    </div>
+                    <div class="md:7/12 lg:w-1/2">
+                        <h2 class="text-3xl font-bold text-gray-900 md:text-4xl dark:text-white">
+                            Igniting Innovation: Unveiling Quivox Studios' Feature Stats
+                        </h2>
+                        <p class="my-8 text-gray-600 dark:text-gray-300">
+                            Discover the magic behind Quivox Studios' success. Our passionate developers bring custom
+                            Discord bots, AI chatbots, MC plugins, and websites to life, elevating businesses with
+                            cutting-edge technology. Each creation is a masterpiece, meticulously crafted to meet the
+                            unique needs of our clients. Join us on a journey of innovation, where ideas ignite and
+                            innovation unfolds. <br> <br>・ Custom Discord Bots: Crafted for server management,
+                            engagement, and moderation by our passionate developers.<br>・ AI Chatbots: Intelligent bots
+                            for automated customer support, designed with expertise.<br>・ MC Plugins: Enhance Minecraft
+                            servers with custom features developed by our skilled team. <br>・ Websites: Professional
+                            sites designed to elevate your brand, powered by creativity.
+                        </p>
+                        <div class="divide-y space-y-4 divide-gray-100 dark:divide-gray-800">
+                            <div class="mt-8 flex gap-4 md:items-center">
+                                <div class="w-12 h-12 flex gap-4 rounded-full bg-indigo-100 dark:bg-indigo-900/20">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
+                                        class="w-6 h-6 m-auto text-indigo-500 dark:text-indigo-400">
+                                        <path fill-rule="evenodd"
+                                            d="M4.848 2.771A49.144 49.144 0 0112 2.25c2.43 0 4.817.178 7.152.52 1.978.292 3.348 2.024 3.348 3.97v6.02c0 1.946-1.37 3.678-3.348 3.97a48.901 48.901 0 01-3.476.383.39.39 0 00-.297.17l-2.755 4.133a.75.75 0 01-1.248 0l-2.755-4.133a.39.39 0 00-.297-.17 48.9 48.9 0 01-3.476-.384c-1.978-.29-3.348-2.024-3.348-3.97V6.741c0-1.946 1.37-3.68 3.348-3.97zM6.75 8.25a.75.75 0 01.75-.75h9a.75.75 0 010 1.5h-9a.75.75 0 01-.75-.75zm.75 2.25a.75.75 0 000 1.5H12a.75.75 0 000-1.5H7.5z"
+                                            clip-rule="evenodd"></path>
+                                    </svg>
+                                </div>
+                                <div class="w-5/6">
+                                    <h4 class="font-semibold text-lg text-gray-700 dark:text-indigo-300">Chat Anytime
+                                    </h4>
+                                    <p class="text-gray-500 dark:text-gray-400">Allows you to track the exact location
+                                        of your assets .</p>
+                                </div>
+                            </div>
+                            <div class="pt-4 flex gap-4 md:items-center">
+                                <div class="w-12 h-12 flex gap-4 rounded-full bg-teal-100 dark:bg-teal-900/20">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
+                                        class="w-6 h-6 m-auto text-teal-600 dark:text-teal-400">
+                                        <path fill-rule="evenodd"
+                                            d="M11.54 22.351l.07.04.028.016a.76.76 0 00.723 0l.028-.015.071-.041a16.975 16.975 0 001.144-.742 19.58 19.58 0 002.683-2.282c1.944-1.99 3.963-4.98 3.963-8.827a8.25 8.25 0 00-16.5 0c0 3.846 2.02 6.837 3.963 8.827a19.58 19.58 0 002.682 2.282 16.975 16.975 0 001.145.742zM12 13.5a3 3 0 100-6 3 3 0 000 6z"
+                                            clip-rule="evenodd"></path>
+                                    </svg>
+                                </div>
+                                <div class="w-5/6">
+                                    <h4 class="font-semibold text-lg text-gray-700 dark:text-teal-300">Real Time
+                                        Location</h4>
+                                    <p class="text-gray-500 dark:text-gray-400">Offers you the flexibility to
+                                        communicate instantly with others at any time.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="text-gray-600 dark:text-gray-300" id="testimonials">
+            <div class="max-w-7xl mx-auto px-6 md:px-12 xl:px-6">
+                <div class="mb-20 space-y-4 px-6 md:px-0">
+                    <h2 class="text-center text-2xl font-bold text-gray-800 dark:text-white md:text-4xl">
+                        We have some fans.
+                    </h2>
+                </div>
+                <div class="md:columns-2 lg:columns-3 gap-8 space-y-8">
+                    <div
+                        class="aspect-auto p-8 border border-gray-100 rounded-3xl bg-white dark:bg-gray-800 dark:border-gray-700 shadow-2xl shadow-gray-600/10 dark:shadow-none">
+                        <div class="flex gap-4">
+                            <img class="w-12 h-12 rounded-full"
+                                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSj4ayrNWnUQOViVDbDuSmzHprz3wbVMAW6dw&usqp=CAU"
+                                alt="user avatar" width="400" height="400" loading="lazy">
+                            <div>
+                                <h6 class="text-lg font-medium text-gray-700 dark:text-white">Madwin Doe</h6>
+                                <p class="text-sm text-gray-500 dark:text-gray-300">Discord Bot Dev</p>
+                            </div>
+                        </div>
+                        <p class="mt-8">Quivox Studios exceeded our expectations with their custom Discord bot. It has
+                            transformed our server, enhancing engagement and management. Their team's expertise in AI
+                            chatbots also amazed us, providing seamless customer support. The MC plugins they developed
+                            added a new dimension to our gaming experience. Highly recommended!</p>
+                    </div>
+                    <div
+                        class="aspect-auto p-8 border border-gray-100 rounded-3xl bg-white dark:bg-gray-800 dark:border-gray-700 shadow-2xl shadow-gray-600/10 dark:shadow-none">
+                        <div class="flex gap-4">
+                            <img class="w-12 h-12 rounded-full"
+                                src="https://cdn.discordapp.com/avatars/769897560113938433/467f5aa6e99af06e0c9924816bcc4e49.png?size=1024"
+                                alt="user avatar" width="200" height="200" loading="lazy">
+                            <div>
+                                <h6 class="text-lg font-medium text-gray-700 dark:text-white">AdhiTheBuddy</h6>
+                                <p class="text-sm text-gray-500 dark:text-gray-300">Octor Cloud, Documentation Manager
+                                </p>
+                            </div>
+                        </div>
+                        <p class="mt-8">Quivox Studios' website development team is top-notch! They created a stunning
+                            website for us, perfectly reflecting our brand. The process was smooth, and their attention
+                            to detail was impressive. Our online presence has never looked better! Highly recommend
+                            their services.</p>
+                    </div>
+                    <div
+                        class="aspect-auto p-8 border border-gray-100 rounded-3xl bg-white dark:bg-gray-800 dark:border-gray-700 shadow-2xl shadow-gray-600/10 dark:shadow-none">
+                        <div class="flex gap-4">
+                            <img class="w-12 h-12 rounded-full"
+                                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQmNt6jij7nA_w2onHwo3ZQQH-ciBV6sgUnhw&usqp=CAU"
+                                alt="user avatar" width="200" height="200" loading="lazy">
+                            <div>
+                                <h6 class="text-lg font-medium text-gray-700 dark:text-white">Ashly Jacob</h6>
+                                <p class="text-sm text-gray-500 dark:text-gray-300">Groza HQ ,Developer</p>
+                            </div>
+                        </div>
+                        <p class="mt-8">Quivox Studios brought our vision to life with their website development
+                            expertise. Their team's creativity and technical skills are unmatched. The website they
+                            built for us is not just visually stunning but also highly functional, exceeding our
+                            expectations. Working with them was a pleasure, and we're thrilled with the results</p>
+                    </div>
+                    <div
+                        class="aspect-auto p-8 border border-gray-100 rounded-3xl bg-white dark:bg-gray-800 dark:border-gray-700 shadow-2xl shadow-gray-600/10 dark:shadow-none">
+                        <div class="flex gap-4">
+                            <img class="w-12 h-12 rounded-full"
+                                src="https://media.discordapp.net/attachments/929016377287794708/1144659290355945512/Solar.gif?ex=65aa9989&is=65982489&hm=20138c7464444d53c0723c5596f9e68aa42da8b05d23b95280e1655a55b1e78c&=&width=431&height=431"
+                                alt="user avatar" width="200" height="200" loading="lazy">
+                            <div>
+                                <h6 class="text-lg font-medium text-gray-700 dark:text-white">Solar Dev</h6>
+                                <p class="text-sm text-gray-500 dark:text-gray-300">CEO @ Neon Dev</p>
+                            </div>
+                        </div>
+                        <p class="mt-8">Quivox Studios' AI chatbot is a game-changer for our customer service. It's like
+                            having a dedicated team available 24/7. The bot's intelligence and responsiveness have
+                            significantly improved our user experience. Working with Quivox was a breeze, and their
+                            innovative solutions have made a real impact on our business.</p>
+                    </div>
+                    <div
+                        class="aspect-auto p-8 border border-gray-100 rounded-3xl bg-white dark:bg-gray-800 dark:border-gray-700 shadow-2xl shadow-gray-600/10 dark:shadow-none">
+                        <div class="flex gap-4">
+                            <img class="w-12 h-12 rounded-full"
+                                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT-nJE4bt15k5B34g5vBwdrWv31GxU7i9GHOw&usqp=CAU"
+                                alt="user avatar" width="200" height="200" loading="lazy">
+                            <div>
+                                <h6 class="text-lg font-medium text-gray-700 dark:text-white">Abel Thomas</h6>
+                                <p class="text-sm text-gray-500 dark:text-gray-300">Gamer, Youtuber</p>
+                            </div>
+                        </div>
+                        <p class="mt-8">Quivox Studios' Minecraft plugins are a must-have for any server owner. Their
+                            team's expertise shines through in the quality and functionality of their plugins. They've
+                            added a whole new level of excitement to our server, and our community loves the new
+                            features. Quivox has definitely earned our trust and recommendation.</p>
+                    </div>
+                    <div
+                        class="aspect-auto p-8 border border-gray-100 rounded-3xl bg-white dark:bg-gray-800 dark:border-gray-700 shadow-2xl shadow-gray-600/10 dark:shadow-none">
+                        <div class="flex gap-4">
+                            <img class="w-12 h-12 rounded-full"
+                                src="https://e3.365dm.com/23/09/768x432/skynews-milky-way-galaxy_6293650.jpg?20230922100022"
+                                alt="user avatar" width="400" height="400" loading="lazy">
+                            <div>
+                                <h6 class="text-lg font-medium text-gray-700 dark:text-white">Nevin Thomas</h6>
+                                <p class="text-sm text-gray-500 dark:text-gray-300">Nerd, Physics Student</p>
+                            </div>
+                        </div>
+                        <p class="mt-8">Quivox Studios perfectly captured the essence of my scientific work in the
+                            website they designed for me. Their attention to detail in representing complex concepts was
+                            remarkable. The site's sleek design and user-friendly interface have made it a valuable tool
+                            for sharing my research. Thank you, Quivox!</p>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <div class="relative py-16">
+            <div aria-hidden="true"
+                class="absolute inset-0 h-max w-full m-auto grid grid-cols-2 -space-x-52 opacity-40 dark:opacity-20">
+                <div class="blur-[106px] h-56 bg-gradient-to-br from-primary to-purple-400 dark:from-blue-700"></div>
+                <div class="blur-[106px] h-32 bg-gradient-to-r from-cyan-400 to-sky-300 dark:to-indigo-600"></div>
+            </div>
+            <div class="max-w-7xl mx-auto px-6 md:px-12 xl:px-6">
+                <div class="relative">
+                    <div class="flex items-center justify-center -space-x-2">
+                        <img loading="lazy" width="280" height="280"
+                            src="https://cdn.discordapp.com/attachments/940624445243002917/1194242420888567850/IMG_20240109_170237.jpg?ex=65afa3ed&is=659d2eed&hm=6b8531cf5aa365cbc15493533f6ea289f251054abc4715b2f00f539e2a4e9068&"
+                            alt="member photo" class="h-8 w-8 rounded-full object-cover">
+                        <img loading="lazy" width="200" height="200"
+                            src="https://cdn.discordapp.com/attachments/950437905137016932/1194262463571566652/image.png?ex=65afb697&is=659d4197&hm=4f388ef2b97780349a7f9cfb550644d549175f69bfeb84b951bf23d283c6f076&"
+                            alt="member photo" class="h-12 w-12 rounded-full object-cover">
+                        <img loading="lazy" width="200" height="200"
+                            src="https://media.discordapp.net/attachments/1096653535380254760/1207537597107146822/IMG_20240131_125048.jpg?ex=65e00206&is=65cd8d06&hm=b6e624685cc2d4b84630b3c59e10ed16f527e91940af82ffa401bd775dcd669b&=&format=webp&width=264&height=467"
+                            alt="member photo" class="z-10 h-16 w-16 rounded-full object-cover">
+                        <img loading="lazy" width="200" height="200"
+                            src="https://cdn.discordapp.com/attachments/1192791832510353529/1200749766586400768/IMG-20240109-WA0005.jpg?ex=65c7505d&is=65b4db5d&hm=026fba6e41e3f`4d1e0100e56c34b08da8f9cc5454bac671be2e0d18b06b1d653&"
+                            alt="member photo" class="h-12 w-12 rounded-full object-cover">
+                        <img loading="lazy" width="280" height="280"
+                            src="https://cdn.discordapp.com/attachments/1198643755721437225/1200855236491890709/r92ZE1St_400x400.jpg?ex=65c7b297&is=65b53d97&hm=b6f02997cbfd4229a4b0242e8215b04fe520b8d443fc37dfa804b779bda9c410&"
+                            alt="member photo" class="h-8 w-8 rounded-full object-cover">
+                    </div>
+                    <div class="mt-6 m-auto space-y-6 md:w-8/12 lg:w-7/12">
+                        <h1 class="text-center text-4xl font-bold text-gray-800 dark:text-white md:text-5xl">Get Started
+                            now</h1>
+                        <p class="text-center text-xl text-gray-600 dark:text-gray-300">
+                            Our adept and innovative developers are prepared to bring your products to life.
+                        </p>
+                        <div class="flex flex-wrap justify-center gap-6">
+                            <a href="#"
+                                class="relative flex h-12 w-full items-center justify-center px-8 before:absolute before:inset-0 before:rounded-full before:bg-primary before:transition before:duration-300 hover:before:scale-105 active:duration-75 active:before:scale-95 sm:w-max">
+                                <span class="relative text-base font-semibold text-white dark:text-dark">Order
+                                    Now</span>
+                            </a>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="projects">
+            <div class="max-w-7xl mx-auto px-6 md:px-12 xl:px-6">
+                <div class="mb-12 space-y-2 text-center">
+                    <h2 class="text-3xl font-bold text-gray-800 md:text-4xl dark:text-white">Our Projects</h2>
+                    <p class="lg:mx-auto lg:w-6/12 text-gray-600 dark:text-gray-300">
+                        Displaying a selection of our projects.
+                    </p>
+                </div>
+                <div class="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
+                    <div
+                        class="group p-6 sm:p-8 rounded-3xl bg-white border border-gray-100 dark:shadow-none dark:border-gray-700 dark:bg-gray-800 bg-opacity-50 shadow-2xl shadow-gray-600/10">
+                        <div class="relative overflow-hidden rounded-xl">
+                            <img src="https://cdn.discordapp.com/attachments/940624445243002917/1194345094812287067/Banner.png?ex=65b0038c&is=659d8e8c&hm=de7f23f93cf1522a967e7b60d6fa7829fe6c354b3a502a80b7b5f2d39066eab6&"
+                                alt="art cover" loading="lazy" width="1000" height="667"
+                                class="h-64 w-full object-cover object-top transition duration-500 group-hover:scale-105">
+                        </div>
+                        <div class="mt-6 relative">
+                            <h3 class="text-2xl font-semibold text-gray-800 dark:text-white">
+                                Sneaker Central | SnC
+                            </h3>
+                            <p class="mt-6 mb-8 text-gray-600 dark:text-gray-300">
+                                For Sneaker Central, we've developed a sleek website showcasing their latest collections
+                                and brand identity. Our custom dashboard streamlines inventory management and sales
+                                tracking, empowering Sneaker Central to stay ahead in the footwear industry with style
+                                and efficiency.
+                            </p>
+                            <a class="inline-block" href="#">
+                                <span class="text-info dark:text-blue-300">Read more</span>
+                            </a>
+                        </div>
+
+                    </div>
+                    <div
+                        class="group p-6 sm:p-8 rounded-3xl bg-white border border-gray-100 dark:shadow-none dark:border-gray-700 dark:bg-gray-800 bg-opacity-50 shadow-2xl shadow-gray-600/10">
+                        <div class="relative overflow-hidden rounded-xl">
+                            <img src="https://cdn.discordapp.com/attachments/929016377287794708/958052338977898536/neonbg.png?ex=65aea345&is=659c2e45&hm=426b99b75c70d23adee3a0afe0389c1ba47d20f988274c716917c84636dc3cde&"
+                                alt="art cover" loading="lazy" width="1000" height="667"
+                                class="h-64 w-full object-cover object-top transition duration-500 group-hover:scale-105">
+                        </div>
+                        <div class="mt-6 relative">
+                            <h3 class="text-2xl font-semibold text-gray-800 dark:text-white">
+                                Neon | An All In One Discord Bot.
+                            </h3>
+                            <p class="mt-6 mb-8 text-gray-600 dark:text-gray-300">
+                                Neon Bot is our latest project, a multipurpose Discord bot designed to elevate server
+                                management and engagement. With features like custom commands, moderation tools, and
+                                interactive games, Neon Bot brings a new level of fun and functionality to Discord
+                                communities. Stay tuned for its launch!
+                            </p>
+                            <a class="inline-block" href="#">
+                                <span class="text-info dark:text-blue-300">Read more</span>
+                            </a>
+                        </div>
+
+                    </div>
+                    <div
+                        class="group p-6 sm:p-8 rounded-3xl bg-white border border-gray-100 dark:shadow-none dark:border-gray-700 dark:bg-gray-800 bg-opacity-50 shadow-2xl shadow-gray-600/10">
+                        <div class="relative overflow-hidden rounded-xl">
+                            <img src="https://media.discordapp.net/attachments/929016377287794708/936298952695902268/New_Project_1.png?ex=65a953d9&is=6596ded9&hm=b3419f6bbecf18ddbdcd6c8399b9621247347ada1e42a728403ea8aa2fbf824e&format=webp&quality=lossless&width=832&height=467&"
+                                alt="art cover" loading="lazy" width="1000" height="667"
+                                class="h-64 w-full object-cover object-top transition duration-500 group-hover:scale-105">
+                        </div>
+                        <div class="mt-6 relative">
+                            <h3 class="text-2xl font-semibold text-gray-800 dark:text-white">
+                                Sweet Berry Network | A Minecraft Community.
+                            </h3>
+                            <p class="mt-6 mb-8 text-gray-600 dark:text-gray-300">
+                                For SweetBerry Network, we've crafted custom Minecraft plugins that enhance gameplay
+                                with unique features. Our website design showcases the server's vibrant community and
+                                offers seamless navigation for players. With our tailored plugins and user-friendly
+                                website, SweetBerry Network stands out as a premier Minecraft destination
+                            </p>
+                            <a class="inline-block" href="#">
+                                <span class="text-info dark:text-blue-300">Read more</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div style="text-align: center;">
+            <h2 class="text-3xl font-bold text-gray-800 md:text-4xl dark:text-white">Would like to work together ?</h2>
+            <br>
+            <p class="lg:mx-auto lg:w-6/12 text-gray-600 dark:text-gray-300">
+                Our expertise spans customized websites, software, and AI projects. With a client-centric approach,<br>
+                we ensure tailored innovation, transforming ideas into technological marvels for a dynamic digital
+                future.
+            </p>
+            <div class="mt-16 flex flex-wrap justify-center gap-y-4 gap-x-6">
+                <a href="#"
+                    class="relative flex h-11 w-full items-center justify-center px-6 before:absolute before:inset-0 before:rounded-full before:bg-primary before:transition before:duration-300 hover:before:scale-105 active:duration-75 active:before:scale-95 sm:w-max">
+                    <span class="relative text-base font-semibold text-white">Try for FREE</span>
+                </a>
+            </div>
+            <div class="mt-12 flex justify-center flex-wrap">
+                <div class="p-4 grayscale transition duration-200 hover:grayscale-0">
+                    <img src="https://cdn.discordapp.com/attachments/1173492752298811402/1194226811429736479/octor.png?ex=65af9563&is=659d2063&hm=c34b770630b3b2adda62f6d970de6d369d427c114383bad09af657ed89e7a6a6&"
+                        class="h-12 w-auto" loading="lazy" alt="client logo">
+                </div>
+                <div class="p-4 grayscale transition duration-200 hover:grayscale-0">
+                    <img src="https://cdn.discordapp.com/icons/1028524353803010138/a7f6eacbbcecd5c46370a853c875f623.png"
+                        class="h-12 w-auto" loading="lazy" alt="client logo">
+                </div>
+                <div class="p-4 grayscale transition duration-200 hover:grayscale-0">
+                    <img src="https://cdn.discordapp.com/attachments/940624445243002917/1204108982848069632/image-removebg-preview_2.png?ex=65d388e0&is=65c113e0&hm=4ec19a9ca50c67025bc5a6cb80f6448ba71a762fb039a9bff29fd9e72466c372&"
+                        class="h-12 w-auto" loading="lazy" alt="client logo">
+                </div>
+            </div>
+        </div>
+
+    </main>
+    <!-- component -->
+    <div class="flex items-end w-full max-h-screen bg-white">
+
+        <footer class="w-full text-gray-700 bg-white-100 body-font">
+            <div
+                class="container flex flex-col flex-wrap px-5 py-24 mx-auto md:items-center lg:items-start md:flex-row md:flex-no-wrap">
+                <div class="flex-shrink-0 w-64 mx-auto text-center md:mx-0 md:text-left">
+
+                    <p class="mt-2 text-sm text-gray-900">Code. Create. Conquer.</p>
+                    <div class="mt-4">
+                        <span class="inline-flex justify-center mt-2 sm:ml-auto sm:mt-0 sm:justify-start">
+                            <a class="text-gray-500 cursor-pointer hover:text-gray-700">
+                                <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    class="w-5 h-5" viewBox="0 0 24 24">
+                                    <path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"></path>
+                                </svg>
+                            </a>
+                            <a href="https://twitter.com/QuivoxStudio"
+                                class="ml-3 text-gray-500 cursor-pointer hover:text-gray-700">
+                                <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    class="w-5 h-5" viewBox="0 0 24 24">
+                                    <path
+                                        d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z">
+                                    </path>
+                                </svg>
+                            </a>
+                            <a href="https://instagram.com/quivoxstudioofficial"
+                                class="ml-3 text-gray-500 cursor-pointer hover:text-gray-700">
+                                <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                    stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+                                    <rect width="20" height="20" x="2" y="2" rx="5" ry="5"></rect>
+                                    <path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37zm1.5-4.87h.01"></path>
+                                </svg>
+                            </a>
+                            <a class="ml-3 text-gray-500 cursor-pointer hover:text-gray-700">
+                                <svg fill="currentColor" stroke="currentColor" stroke-linecap="round"
+                                    stroke-linejoin="round" stroke-width="0" class="w-5 h-5" viewBox="0 0 24 24">
+                                    <path stroke="none"
+                                        d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z">
+                                    </path>
+                                    <circle cx="4" cy="4" r="2" stroke="none"></circle>
+                                </svg>
+                            </a>
+                        </span>
+                    </div>
+                </div>
+                <div class="flex flex-wrap flex-grow mt-10 -mb-10 text-center md:pl-20 md:mt-0 md:text-left">
+                    <div class="w-full px-4 lg:w-1/4 md:w-1/2">
+                        <h2 class="mb-3 text-sm font-medium tracking-widest text-gray-900 uppercase title-font">About
+                        </h2>
+                        <nav class="mb-10 list-none">
+                            <ul>
+                                <li class="mt-3">
+                                    <a href="company-page.html"
+                                        class="text-gray-500 cursor-pointer hover:text-gray-900">Company</a>
+                                </li>
+                                <li class="mt-3">
+                                    <a href="https://matwproject.org/"
+                                        class="text-gray-500 cursor-pointer hover:text-gray-900">MATW PROJECT</a>
+                                </li>
+                                <li class="mt-3">
+                                    <a href="https://quivoxstudio.cloud/blog/"
+                                        class="text-gray-500 cursor-pointer hover:text-gray-900">Blog</a>
+                                </li>
+                            </ul>
+
+                        </nav>
+                    </div>
+                    <div class="w-full px-4 lg:w-1/4 md:w-1/2">
+                        <h2 class="mb-3 text-sm font-medium tracking-widest text-gray-900 uppercase title-font">Support
+                        </h2>
+                        <nav class="mb-10 list-none">
+                            <li class="mt-3">
+                                <a class="text-gray-500 cursor-pointer hover:text-gray-900">Contact Support</a>
+                            </li>
+                            <li class="mt-3">
+                                <a class="text-gray-500 cursor-pointer hover:text-gray-900">Help Resources</a>
+                            </li>
+                            <li class="mt-3">
+                                <a class="text-gray-500 cursor-pointer hover:text-gray-900">Release Updates</a>
+                            </li>
+                        </nav>
+                    </div>
+                    <div class="w-full px-4 lg:w-1/4 md:w-1/2">
+                        <h2 class="mb-3 text-sm font-medium tracking-widest text-gray-900 uppercase title-font">Platform
+                        </h2>
+                        <nav class="mb-10 list-none">
+                            <li class="mt-3">
+                                <a class="text-gray-500 cursor-pointer hover:text-gray-900">Terms & Privacy</a>
+                            </li>
+                            <li class="mt-3">
+                                <a class="text-gray-500 cursor-pointer hover:text-gray-900">Pricing</a>
+                            </li>
+                            <li class="mt-3">
+                                <a class="text-gray-500 cursor-pointer hover:text-gray-900">FAQ</a>
+                            </li>
+                        </nav>
+                    </div>
+                    <div class="w-full px-4 lg:w-1/4 md:w-1/2">
+                        <h2 class="mb-3 text-sm font-medium tracking-widest text-gray-900 uppercase title-font">Contact
+                        </h2>
+                        <nav class="mb-10 list-none">
+                            <ul>
+                                <li class="mt-3">
+                                    <a href="https://mail.google.com/mail/u/0/?fs=1&tf=cm&source=mailto&to=contact@quivox.lol"
+                                        class="text-gray-500 cursor-pointer hover:text-gray-900">Send a Message</a>
+                                </li>
+                                <li class="mt-3">
+                                    <a href="link-to-request-quote"
+                                        class="text-gray-500 cursor-pointer hover:text-gray-900">Request a Quote</a>
+                                </li>
+                                <li class="mt-3">
+                                    <a class="text-gray-500 cursor-pointer hover:text-gray-900">+91 6238193133</a>
+                                </li>
+                            </ul>
+
+                        </nav>
+                    </div>
+                </div>
+            </div>
+            <div class="bg-gray-300">
+                <div class="container px-5 py-4 mx-auto">
+                    <p class="text-sm text-gray-1000 capitalize xl:text-center"><b>© Quivox Studio | All Rights Reserved
+                        </b></p>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const cookieClose = document.getElementById("cookie-close");
+
+            cookieClose.addEventListener("click", function () {
+                document.getElementById("cookie-popup").style.display = "none";
+            });
+        });
+    </script>
+    <!--Start of Tawk.to Script-->
+    <script type="text/javascript">
+        var Tawk_API = Tawk_API || {}, Tawk_LoadStart = new Date();
+        (function () {
+            var s1 = document.createElement("script"), s0 = document.getElementsByTagName("script")[0];
+            s1.async = true;
+            s1.src = 'https://embed.tawk.to/65a3b5e98d261e1b5f532735/1hk3nt6hl';
+            s1.charset = 'UTF-8';
+            s1.setAttribute('crossorigin', '*');
+            s0.parentNode.insertBefore(s1, s0);
+        })();
+    </script>
+    <!--End of Tawk.to Script-->
+</body>
+
+</html>

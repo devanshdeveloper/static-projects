@@ -1,0 +1,10 @@
+/**
+ * @module       MultiToggles
+ * @author       ATOM
+ * @license      MIT
+ * @see          https://codepen.io/OXAYAZA/pen/eRbYjV
+ * @version      v1.2.1
+ * @description  Allows you to use multiple toggles to switch class "active" on the target,
+ *               itself and other toggles linked to the same target.
+ */
+function multitoggles(){var t=t||{};function e(t){this.node=t}t={attrToggle:t.attrToggle||"data-multitoggle",attrBlur:t.attrBlur||"data-multitoggle-blur",attrIsolate:t.attrIsolate||"data-multitoggle-isolate"},e.prototype.init=function(){this.selectorTarget=this.node.getAttribute(t.attrToggle),this.selectorGroup="["+t.attrToggle+'="'+this.selectorTarget+'"]',this.selectorBlur=this.node.getAttribute(t.attrBlur),this.isolate=this.node.hasAttribute(t.attrIsolate),this.nodesTarget=document.querySelectorAll(this.selectorTarget),this.nodesGroup=document.querySelectorAll(this.selectorGroup),this.nodesBlur=document.querySelectorAll(this.selectorBlur),this.nodesIsolate=document.querySelectorAll("["+t.attrIsolate+"]")},e.prototype.checkBlurContain=function(t){for(var e=!1,o=0;o<this.nodesBlur.length;o++)e=this.nodesBlur[o].contains(t)||e;return e},e.prototype.checkToggleTarget=function(e){return!e.hasAttribute(t.attrToggle)||this.selectorTarget===e.getAttribute(t.attrToggle)};for(var o=document.querySelectorAll("["+t.attrToggle+"]"),r=[],l=0;l<o.length;l++){var s=new e(o[l]);s.init(),r.push(s)}for(l=0;l<r.length;l++)r[l].node.addEventListener("click",function(t){return function(){for(var e=0;e<t.nodesTarget.length;e++)t.nodesTarget[e].classList.toggle("active");for(e=0;e<t.nodesGroup.length;e++)t.nodesGroup[e].classList.toggle("active")}}(r[l])),document.addEventListener("click",function(t){return function(){if(t.selectorBlur&&!t.checkBlurContain(event.target)){for(var e=0;e<t.nodesTarget.length;e++)t.nodesTarget[e].classList.remove("active");for(e=0;e<t.nodesGroup.length;e++)t.nodesGroup[e].classList.remove("active")}if(t.isolate&&!t.checkToggleTarget(event.target)){for(e=0;e<t.nodesTarget.length;e++)t.nodesTarget[e].classList.remove("active");for(e=0;e<t.nodesGroup.length;e++)t.nodesGroup[e].classList.remove("active")}}}(r[l]))}
