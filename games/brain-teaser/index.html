@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Brain Concentrator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <main class="app-shell">
+        <header class="controls-panel">
+            <label class="field">
+                Number of words
+                <input type="number" value="50" min="1" max="200" placeholder="numberOfSpans" id="numberInput">
+            </label>
+
+            <label class="field">
+                Challenge duration (seconds)
+                <input type="number" value="45" min="10" max="180" step="5" id="durationInput">
+            </label>
+
+            <div class="actions">
+                <button class="btn" id="resetBtn">RESET GRID</button>
+                <button class="btn btn-primary" id="startChallengeBtn">START CHALLENGE</button>
+            </div>
+        </header>
+
+        <section class="challenge-panel" aria-live="polite">
+            <p class="challenge-title">Challenge mode</p>
+            <div class="challenge-readout">
+                <span>Time: <strong id="timeLeft">--</strong>s</span>
+                <span>Score: <strong id="scoreValue">0</strong></span>
+                <span>Streak: <strong id="streakValue">0</strong></span>
+            </div>
+            <p class="challenge-card" id="challengeCard">Press "Start Challenge" to begin.</p>
+            <div class="actions challenge-actions">
+                <button class="btn" id="matchBtn" disabled>MATCH (M)</button>
+                <button class="btn" id="mismatchBtn" disabled>MISMATCH (N)</button>
+            </div>
+            <p class="helper-text">Decide whether the word text and the display color are the same.</p>
+        </section>
+
+        <section class="container" aria-label="Word cloud"></section>
+    </main>
+
+    <script src="app.js"></script>
+</body>
+
+    <script type="module" src="app.js"></script>
+  </body>
+</html>
