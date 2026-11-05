@@ -1,0 +1,40 @@
+* {
+    font-family: "Poppins";
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    height: 100vh;
+    display : flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 50px;
+}
+
+.box {
+    max-width: 90vw;
+    width : 700px;
+    grid-template-columns: repeat(5 , auto);
+    display : grid;
+    height: 250px;
+}
+
+.pad {
+    padding: 10px;
+    margin: 2px;
+    font-size: 25px;
+    border: 0;
+    border-radius: 5px;
+    background-color: #f1f1f1;
+    transition: all 0.25s;
+}
+.pad.red {
+    background-color: rgb(255, 75, 75);
+}
+.pad.green {
+    background-color: rgb(0, 255, 0);
+}
+
