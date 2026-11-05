@@ -1,0 +1,30 @@
+* {
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background-color: whitesmoke;
+}
+div {
+  background-color: whitesmoke;
+  color: darkgreen;
+  text-align: center;
+}
+
+.grid {
+
+}
+
+.playButton {
+  width: 35px;
+  height: 35px;
+  margin-bottom: 4px;
+  border-radius: 4px;
+  background-color: #a2f3ff;
+  color: #000000;
+  box-shadow: inset 0 0 20px darkgreen, 0 0 30px darkgreen;
+}
+
+#resetButton {
+  border-radius: 5px;
+}

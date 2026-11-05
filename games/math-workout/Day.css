@@ -1,0 +1,44 @@
+* {
+  font-family: "Poppins", sans-serif;
+}
+body {
+  background-color: #f2f2f2;
+  letter-spacing: -1.2px;
+}
+.div {
+  background-color: #fafafa;
+  margin-bottom: 10px;
+  padding: 10px;
+  border-radius: 10px;
+  border: 1px solid #ebebeb;
+}
+
+.button {
+  background-color: #e4e4e4;
+  padding: 10px;
+  border-radius: 10px;
+  border: 0;
+}
+
+.theme {
+  background: #fafafa;
+  width: 150px;
+  border-radius: 20px;
+  margin-left: 10px;
+  padding: 10px;
+}
+
+.theme-text {
+  display: inline;
+  padding-left: 30px;
+  padding: 10px;
+}
+
+.number {
+  background-color: #e4e4e4;
+  padding: 25px 50px 25px 50px;
+  border-radius: 10px;
+  border: 0;
+  font-size: 40px;
+  margin-bottom: 5px;
+}

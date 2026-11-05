@@ -1,0 +1,86 @@
+<!doctype html>
+<html>
+
+<head>
+    <title>Math Workout</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Dancing+Script&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto&display=swap"
+        rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link href="Day.css" id="styles" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+    <center>
+        <h1 style="background-color: #252525;" class="header">
+            <a href="" class="typewrite" data-period="10000" data-type='["Maths Workout","By friend.bro"]'>
+                <span class="wrap"></span>
+            </a>
+        </h1>
+        <div class="theme" style="display:inline;">
+            <p class="theme-text">Dark mode</p>
+            <input type=button id="mode" text="Switch Mode" class="button" value="OFF">
+        </div>
+        <button class="button" style="display:inline;" onClick="restart() ">RE-START</button>
+        </div>
+    </center>
+    <br><br>
+    <div class="div">
+        <br>
+        <button id="difficulty" class="button">Difficulty = 3</button>
+        <p id="livesleft" class="button" style="display : inline;align-items: center; justify-content: center;">Lives: 3
+        </p>
+        <button class="button" style="float: right;"><strong>Correct Answers: </strong><span
+                id="points">0</span></button> <br><br>
+        <center>
+            <p id="feedback" style="display : inline"> Start Workout</p>
+            <h1 id="problem"></h1>
+            <input type="number" id="answer" class="button">
+            <button class="button" style="margin-top:-20px" onClick="checkSolution()">Check</button>
+        </center>
+    </div>
+    <div>
+        <center>
+            <button class="number" onClick="inPut(1)">1</button>
+            <button class="number" onClick="inPut(2)">2</button>
+            <button class="number" onClick="inPut(3)">3</button>
+    </div>
+    <div>
+        <center>
+            <button class="number" onClick="inPut(4)">4</button>
+            <button class="number" onClick="inPut(5)">5</button>
+            <button class="number" onClick="inPut(6)">6</button>
+    </div>
+    <div>
+        <center>
+            <button class="number" onClick="inPut(7)">7</button>
+            <button class="number" onClick="inPut(8)">8</button>
+            <button class="number" onClick="inPut(9)">9</button> <br>
+            <button class="number" onClick="inPut(0)">0</button>
+
+    </div>
+    <br><br><br><br><br>
+    <script src="script.js"></script>
+    <script>
+        $(document).ready(function () {
+            $('#mode').click(function () {
+                if ($('link#styles').attr('href') == "Day.css") {
+                    $('#mode').attr('value', 'ON')
+                    $('link#styles').attr('href', 'Night.css')
+                }
+                else {
+                    $('#mode').attr('value', 'OFF')
+                    $('link#styles').attr('href', 'Day.css')
+                }
+            })
+
+        });
+    </script>
+</body>
+
+</html>

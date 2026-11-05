@@ -1,0 +1,47 @@
+* {
+    font-family: "Poppins", sans-serif;
+  }
+
+body {
+  background-color: black;
+  font-family: "Fira Mono";
+  letter-spacing: -1.2px;
+  color: white;
+}
+.div {
+  background-color: #252525;
+  margin-bottom: 10px;
+  padding: 10px;
+  border-radius: 10px;
+  border: 0;
+}
+
+.button {
+  background-color: #2a2a2a;
+  padding: 10px;
+  border-radius: 10px;
+  border: 0;
+  color: white;
+}
+
+.theme {
+  background: #252525;
+  width: 150px;
+  border-radius: 20px;
+  padding: 10px;
+}
+
+.theme-text {
+  display: inline;
+  padding-left: 30px;
+}
+
+.number {
+  background-color: #252525;
+  padding: 25px 50px 25px 50px;
+  border-radius: 10px;
+  border: 0;
+  font-size: 40px;
+  margin-bottom: 5px;
+  color: white;
+}

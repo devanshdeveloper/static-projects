@@ -1,0 +1,121 @@
+<html>
+
+<head>
+    <title>5 x in a row</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Dancing+Script&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="t.css">
+</head>
+
+<body>
+    <div>
+        <h1>5 x in a row</h1>
+        <p>
+        <h3>Rules:</h3>It's a game for two players. For win you must have five your symbols next to each other. Have a
+        lot of fun.
+        <p id="info">It's X turn!</p>
+        <div class="grid">
+            <button id="a1" class="playButton" onclick="play('a1')">-</button>
+            <button id="b1" class="playButton" onclick="play('b1')">-</button>
+            <button id="c1" class="playButton" onclick="play('c1')">-</button>
+            <button id="d1" class="playButton" onclick="play('d1')">-</button>
+            <button id="e1" class="playButton" onclick="play('e1')">-</button>
+            <button id="f1" class="playButton" onclick="play('f1')">-</button>
+            <button id="g1" class="playButton" onclick="play('g1')">-</button>
+            <button id="h1" class="playButton" onclick="play('h1')">-</button>
+            <button id="i1" class="playButton" onclick="play('i1')">-</button>
+            <br>
+            <button id="a2" class="playButton" onclick="play('a2')">-</button>
+            <button id="b2" class="playButton" onclick="play('b2')">-</button>
+            <button id="c2" class="playButton" onclick="play('c2')">-</button>
+            <button id="d2" class="playButton" onclick="play('d2')">-</button>
+            <button id="e2" class="playButton" onclick="play('e2')">-</button>
+            <button id="f2" class="playButton" onclick="play('f2')">-</button>
+            <button id="g2" class="playButton" onclick="play('g2')">-</button>
+            <button id="h2" class="playButton" onclick="play('h2')">-</button>
+            <button id="i2" class="playButton" onclick="play('i2')">-</button>
+            <br>
+            <button id="a3" class="playButton" onclick="play('a3')">-</button>
+            <button id="b3" class="playButton" onclick="play('b3')">-</button>
+            <button id="c3" class="playButton" onclick="play('c3')">-</button>
+            <button id="d3" class="playButton" onclick="play('d3')">-</button>
+            <button id="e3" class="playButton" onclick="play('e3')">-</button>
+            <button id="f3" class="playButton" onclick="play('f3')">-</button>
+            <button id="g3" class="playButton" onclick="play('g3')">-</button>
+            <button id="h3" class="playButton" onclick="play('h3')">-</button>
+            <button id="i3" class="playButton" onclick="play('i3')">-</button>
+            <br>
+            <button id="a4" class="playButton" onclick="play('a4')">-</button>
+            <button id="b4" class="playButton" onclick="play('b4')">-</button>
+            <button id="c4" class="playButton" onclick="play('c4')">-</button>
+            <button id="d4" class="playButton" onclick="play('d4')">-</button>
+            <button id="e4" class="playButton" onclick="play('e4')">-</button>
+            <button id="f4" class="playButton" onclick="play('f4')">-</button>
+            <button id="g4" class="playButton" onclick="play('g4')">-</button>
+            <button id="h4" class="playButton" onclick="play('h4')">-</button>
+            <button id="i4" class="playButton" onclick="play('i4')">-</button>
+            <br>
+            <button id="a5" class="playButton" onclick="play('a5')">-</button>
+            <button id="b5" class="playButton" onclick="play('b5')">-</button>
+            <button id="c5" class="playButton" onclick="play('c5')">-</button>
+            <button id="d5" class="playButton" onclick="play('d5')">-</button>
+            <button id="e5" class="playButton" onclick="play('e5')">-</button>
+            <button id="f5" class="playButton" onclick="play('f5')">-</button>
+            <button id="g5" class="playButton" onclick="play('g5')">-</button>
+            <button id="h5" class="playButton" onclick="play('h5')">-</button>
+            <button id="i5" class="playButton" onclick="play('i5')">-</button>
+            <br>
+            <button id="a6" class="playButton" onclick="play('a6')">-</button>
+            <button id="b6" class="playButton" onclick="play('b6')">-</button>
+            <button id="c6" class="playButton" onclick="play('c6')">-</button>
+            <button id="d6" class="playButton" onclick="play('d6')">-</button>
+            <button id="e6" class="playButton" onclick="play('e6')">-</button>
+            <button id="f6" class="playButton" onclick="play('f6')">-</button>
+            <button id="g6" class="playButton" onclick="play('g6')">-</button>
+            <button id="h6" class="playButton" onclick="play('h6')">-</button>
+            <button id="i6" class="playButton" onclick="play('i6')">-</button>
+            <br>
+            <button id="a7" class="playButton" onclick="play('a7')">-</button>
+            <button id="b7" class="playButton" onclick="play('b7')">-</button>
+            <button id="c7" class="playButton" onclick="play('c7')">-</button>
+            <button id="d7" class="playButton" onclick="play('d7')">-</button>
+            <button id="e7" class="playButton" onclick="play('e7')">-</button>
+            <button id="f7" class="playButton" onclick="play('f7')">-</button>
+            <button id="g7" class="playButton" onclick="play('g7')">-</button>
+            <button id="h7" class="playButton" onclick="play('h7')">-</button>
+            <button id="i7" class="playButton" onclick="play('i7')">-</button>
+            <br>
+            <button id="a8" class="playButton" onclick="play('a8')">-</button>
+            <button id="b8" class="playButton" onclick="play('b8')">-</button>
+            <button id="c8" class="playButton" onclick="play('c8')">-</button>
+            <button id="d8" class="playButton" onclick="play('d8')">-</button>
+            <button id="e8" class="playButton" onclick="play('e8')">-</button>
+            <button id="f8" class="playButton" onclick="play('f8')">-</button>
+            <button id="g8" class="playButton" onclick="play('g8')">-</button>
+            <button id="h8" class="playButton" onclick="play('h8')">-</button>
+            <button id="i8" class="playButton" onclick="play('i8')">-</button>
+            <br>
+            <button id="a9" class="playButton" onclick="play('a9')">-</button>
+            <button id="b9" class="playButton" onclick="play('b9')">-</button>
+            <button id="c9" class="playButton" onclick="play('c9')">-</button>
+            <button id="d9" class="playButton" onclick="play('d9')">-</button>
+            <button id="e9" class="playButton" onclick="play('e9')">-</button>
+            <button id="f9" class="playButton" onclick="play('f9')">-</button>
+            <button id="g9" class="playButton" onclick="play('g9')">-</button>
+            <button id="h9" class="playButton" onclick="play('h9')">-</button>
+            <button id="i9" class="playButton" onclick="play('i9')">-</button>
+        </div>
+        <br> <br>
+        <button onclick="resetGame()" id="resetButton" disabled><strong>Play again</strong></button>
+    </div>
+    <br><br><br>
+    <div>This game is build by code crafters corner</div>
+    <script src="t.js"></script>
+</body>
+
+</html>

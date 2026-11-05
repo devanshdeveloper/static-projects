@@ -1,0 +1,13 @@
+body {
+    background-color: #fafafa;
+   }
+   canvas{
+   border-radius: 8px;
+   border: 2px solid #f2f2f2;
+   }
+   button{
+   font-size: 20px;
+   Padding: 10px;
+   Border-radius: 10px;
+   background-color: #e4e4e4;
+   }
