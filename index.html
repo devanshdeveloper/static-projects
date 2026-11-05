@@ -1,0 +1,654 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Static Projects Showcase</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --bg-color: #f8fafc;
+      --card-bg: #ffffff;
+      --card-border: #e2e8f0;
+      --text-primary: #0f172a;
+      --text-secondary: #475569;
+      --text-muted: #94a3b8;
+      --accent: #2563eb;
+      --accent-hover: #1d4ed8;
+      --accent-light: #eff6ff;
+      --badge-bg: #f1f5f9;
+      --badge-text: #475569;
+      --fork-badge-bg: #fef3c7;
+      --fork-badge-text: #92400e;
+      --shadow-sm: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+      --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -2px rgba(0, 0, 0, 0.1);
+      --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -4px rgba(0, 0, 0, 0.1);
+      --radius: 12px;
+      --transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+    }
+
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --bg-color: #0b0f19;
+        --card-bg: #131b2e;
+        --card-border: #1e293b;
+        --text-primary: #f8fafc;
+        --text-secondary: #94a3b8;
+        --text-muted: #64748b;
+        --accent: #3b82f6;
+        --accent-hover: #60a5fa;
+        --accent-light: #1e293b;
+        --badge-bg: #1e293b;
+        --badge-text: #cbd5e1;
+        --fork-badge-bg: #451a03;
+        --fork-badge-text: #fde68a;
+        --shadow-sm: 0 1px 2px 0 rgba(0, 0, 0, 0.4);
+        --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.4);
+        --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.5);
+      }
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: 'Inter', system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      background-color: var(--bg-color);
+      color: var(--text-primary);
+      line-height: 1.5;
+      padding: 2.5rem 1.25rem;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .container {
+      width: 100%;
+      max-width: 1100px;
+    }
+
+    header {
+      margin-bottom: 2.5rem;
+      text-align: center;
+    }
+
+    .header-badge {
+      display: inline-block;
+      padding: 0.25rem 0.75rem;
+      font-size: 0.8125rem;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      border-radius: 9999px;
+      background-color: var(--accent-light);
+      color: var(--accent);
+      margin-bottom: 0.75rem;
+    }
+
+    h1 {
+      font-size: 2.25rem;
+      font-weight: 800;
+      letter-spacing: -0.025em;
+      margin-bottom: 0.5rem;
+    }
+
+    p.subtitle {
+      font-size: 1.0625rem;
+      color: var(--text-secondary);
+      max-width: 650px;
+      margin: 0 auto;
+    }
+
+    .controls-wrapper {
+      background-color: var(--card-bg);
+      border: 1px solid var(--card-border);
+      border-radius: var(--radius);
+      padding: 1.25rem;
+      margin-bottom: 2.5rem;
+      box-shadow: var(--shadow-sm);
+      display: flex;
+      flex-direction: column;
+      gap: 1.25rem;
+    }
+
+    .search-box {
+      position: relative;
+      width: 100%;
+    }
+
+    .search-input {
+      width: 100%;
+      padding: 0.75rem 1rem 0.75rem 2.75rem;
+      font-size: 0.9375rem;
+      font-family: inherit;
+      color: var(--text-primary);
+      background-color: var(--bg-color);
+      border: 1px solid var(--card-border);
+      border-radius: 8px;
+      outline: none;
+      transition: var(--transition);
+    }
+
+    .search-input:focus {
+      border-color: var(--accent);
+      box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.15);
+    }
+
+    .search-icon {
+      position: absolute;
+      left: 1rem;
+      top: 50%;
+      transform: translateY(-50%);
+      width: 1.125rem;
+      height: 1.125rem;
+      color: var(--text-muted);
+      pointer-events: none;
+    }
+
+    .category-filters {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.5rem;
+      align-items: center;
+    }
+
+    .filter-btn {
+      background-color: var(--bg-color);
+      color: var(--text-secondary);
+      border: 1px solid var(--card-border);
+      padding: 0.4375rem 0.875rem;
+      border-radius: 9999px;
+      font-size: 0.875rem;
+      font-weight: 500;
+      font-family: inherit;
+      cursor: pointer;
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      transition: var(--transition);
+    }
+
+    .filter-btn:hover {
+      border-color: var(--accent);
+      color: var(--text-primary);
+    }
+
+    .filter-btn.active {
+      background-color: var(--accent);
+      border-color: var(--accent);
+      color: #ffffff;
+    }
+
+    .filter-btn .count-pill {
+      font-size: 0.75rem;
+      padding: 0.125rem 0.5rem;
+      border-radius: 9999px;
+      background-color: rgba(0, 0, 0, 0.08);
+      font-weight: 600;
+    }
+
+    .filter-btn.active .count-pill {
+      background-color: rgba(255, 255, 255, 0.25);
+      color: #ffffff;
+    }
+
+    .category-section {
+      margin-bottom: 3rem;
+    }
+
+    .category-header {
+      display: flex;
+      align-items: center;
+      gap: 0.75rem;
+      margin-bottom: 1.25rem;
+      padding-bottom: 0.5rem;
+      border-bottom: 2px solid var(--card-border);
+    }
+
+    .category-title {
+      font-size: 1.375rem;
+      font-weight: 700;
+      letter-spacing: -0.015em;
+    }
+
+    .category-count {
+      font-size: 0.8125rem;
+      color: var(--text-muted);
+      font-weight: 600;
+      background-color: var(--badge-bg);
+      padding: 0.2rem 0.6rem;
+      border-radius: 9999px;
+    }
+
+    .projects-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(310px, 1fr));
+      gap: 1.25rem;
+    }
+
+    .project-card {
+      background-color: var(--card-bg);
+      border: 1px solid var(--card-border);
+      border-radius: var(--radius);
+      padding: 1.5rem;
+      box-shadow: var(--shadow-sm);
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      transition: var(--transition);
+      position: relative;
+      text-decoration: none;
+      color: inherit;
+    }
+
+    .project-card:hover {
+      transform: translateY(-3px);
+      box-shadow: var(--shadow-md);
+      border-color: var(--accent);
+    }
+
+    .card-top {
+      margin-bottom: 1rem;
+    }
+
+    .card-badges {
+      display: flex;
+      gap: 0.375rem;
+      margin-bottom: 0.75rem;
+      flex-wrap: wrap;
+    }
+
+    .badge {
+      font-size: 0.6875rem;
+      font-weight: 600;
+      padding: 0.2rem 0.5rem;
+      border-radius: 4px;
+      text-transform: uppercase;
+      letter-spacing: 0.04em;
+    }
+
+    .badge-category {
+      background-color: var(--badge-bg);
+      color: var(--badge-text);
+    }
+
+    .badge-fork {
+      background-color: var(--fork-badge-bg);
+      color: var(--fork-badge-text);
+    }
+
+    .badge-archived {
+      background-color: #fee2e2;
+      color: #991b1b;
+    }
+
+    .card-title {
+      font-size: 1.125rem;
+      font-weight: 700;
+      margin-bottom: 0.5rem;
+      line-height: 1.35;
+      color: var(--text-primary);
+    }
+
+    .card-desc {
+      font-size: 0.875rem;
+      color: var(--text-secondary);
+      line-height: 1.45;
+    }
+
+    .card-footer {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding-top: 1rem;
+      border-top: 1px solid var(--card-border);
+      margin-top: 1rem;
+      font-size: 0.8125rem;
+    }
+
+    .card-path {
+      color: var(--text-muted);
+      font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+      font-size: 0.75rem;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+      max-width: 190px;
+    }
+
+    .card-cta {
+      color: var(--accent);
+      font-weight: 600;
+      display: inline-flex;
+      align-items: center;
+      gap: 0.25rem;
+      transition: var(--transition);
+    }
+
+    .project-card:hover .card-cta {
+      color: var(--accent-hover);
+      gap: 0.4rem;
+    }
+
+    .empty-state {
+      text-align: center;
+      padding: 4rem 1rem;
+      background-color: var(--card-bg);
+      border: 1px dashed var(--card-border);
+      border-radius: var(--radius);
+      width: 100%;
+    }
+
+    .empty-title {
+      font-size: 1.125rem;
+      font-weight: 600;
+      margin-bottom: 0.5rem;
+    }
+
+    .empty-desc {
+      font-size: 0.875rem;
+      color: var(--text-secondary);
+    }
+
+    footer {
+      margin-top: 3rem;
+      text-align: center;
+      font-size: 0.8125rem;
+      color: var(--text-muted);
+      border-top: 1px solid var(--card-border);
+      padding-top: 1.5rem;
+      width: 100%;
+      max-width: 1100px;
+    }
+
+    @media (max-width: 640px) {
+      body {
+        padding: 1.5rem 1rem;
+      }
+      h1 {
+        font-size: 1.75rem;
+      }
+      .projects-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <div class="header-badge">Static Showcase</div>
+      <h1>Consolidated Static Projects</h1>
+      <p class="subtitle">A curated collection of client-side web projects, games, interactive utilities, and UI components.</p>
+    </header>
+
+    <section class="controls-wrapper">
+      <div class="search-box">
+        <svg class="search-icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+        </svg>
+        <input type="text" id="searchInput" class="search-input" placeholder="Search by name, category, or keyword..." autocomplete="off">
+      </div>
+
+      <div class="category-filters" id="categoryFilters">
+        <!-- Rendered by JS -->
+      </div>
+    </section>
+
+    <main id="projectsContainer">
+      <!-- Rendered by JS -->
+    </main>
+
+    <footer>
+      <p>Consolidated repository containing <span id="totalProjectsSpan">10</span> static web projects. Works offline and on GitHub Pages.</p>
+    </footer>
+  </div>
+
+  <script>
+    const projects = [
+      {
+        name: "rps",
+        title: "Rock Paper Scissors - Avatar Edition",
+        category: "games",
+        categoryLabel: "Games",
+        description: "Interactive Rock Paper Scissors game with Avatar graphics and single/two-player modes.",
+        path: "games/rps/index.html",
+        isFork: false,
+        isArchived: false
+      },
+      {
+        name: "cross-numbers",
+        title: "Cross Numbers",
+        category: "games",
+        categoryLabel: "Games",
+        description: "Interactive arithmetic crossword puzzle and number calculation board challenge.",
+        path: "games/cross-numbers/index.html",
+        isFork: false,
+        isArchived: false
+      },
+      {
+        name: "keyboard-game",
+        title: "Keyboard Game",
+        category: "games",
+        categoryLabel: "Games",
+        description: "Speed typing test and keyboard accuracy challenge with customizable speed and live WPM score.",
+        path: "games/keyboard-game/index.html",
+        isFork: false,
+        isArchived: false
+      },
+      {
+        name: "javascript-quiz",
+        title: "JavaScript Quiz",
+        category: "games",
+        categoryLabel: "Games",
+        description: "Timed multiple-choice quiz app testing core JavaScript concepts with modal score review.",
+        path: "games/javascript-quiz/index.html",
+        isFork: false,
+        isArchived: false
+      },
+      {
+        name: "text-editor",
+        title: "Text Editor",
+        category: "tools-utilities",
+        categoryLabel: "Tools & Utilities",
+        description: "Browser-based rich text editor with speech synthesis, word tools, and local file saving.",
+        path: "tools-utilities/text-editor/index.html",
+        isFork: false,
+        isArchived: false
+      },
+      {
+        name: "link-clocker",
+        title: "Link Clocker",
+        category: "tools-utilities",
+        categoryLabel: "Tools & Utilities",
+        description: "URL launcher and cloaking scheduler supporting iframe tabs, custom timers, and notifications.",
+        path: "tools-utilities/link-clocker/index.html",
+        isFork: false,
+        isArchived: false
+      },
+      {
+        name: "get-a-joke",
+        title: "Get a Joke",
+        category: "tools-utilities",
+        categoryLabel: "Tools & Utilities",
+        description: "Minimalist on-demand humor generator fetching random jokes with a clean user interface.",
+        path: "tools-utilities/get-a-joke/index.html",
+        isFork: false,
+        isArchived: false
+      },
+      {
+        name: "flipoff",
+        title: "FlipOff. — Split-Flap Display Emulator",
+        category: "ui-components-demos",
+        categoryLabel: "UI Components & Demos",
+        description: "Retro mechanical split-flap departure board emulator with realistic animations and flap audio.",
+        path: "ui-components-demos/flipoff/index.html",
+        isFork: true,
+        isArchived: false
+      },
+      {
+        name: "henri-fayol-14-principles-of-management",
+        title: "Henri Fayol 14 Principles of Management",
+        category: "ui-components-demos",
+        categoryLabel: "UI Components & Demos",
+        description: "Interactive visual accordion guide and speech synthesis narration for the 14 management principles.",
+        path: "ui-components-demos/henri-fayol-14-principles-of-management/index.html",
+        isFork: false,
+        isArchived: false
+      },
+      {
+        name: "github_actions_contest_aac_html",
+        title: "Sample Static Site",
+        category: "ui-components-demos",
+        categoryLabel: "UI Components & Demos",
+        description: "Minimal sample static website demo built for the GitHub Actions contest pipeline.",
+        path: "ui-components-demos/github_actions_contest_aac_html/index.html",
+        isFork: true,
+        isArchived: false
+      }
+    ];
+
+    let currentFilter = 'all';
+    let searchQuery = '';
+
+    const categoryOrder = [
+      { id: 'games', label: 'Games' },
+      { id: 'tools-utilities', label: 'Tools & Utilities' },
+      { id: 'ui-components-demos', label: 'UI Components & Demos' }
+    ];
+
+    function init() {
+      renderFilters();
+      renderProjects();
+
+      document.getElementById('searchInput').addEventListener('input', (e) => {
+        searchQuery = e.target.value.trim().toLowerCase();
+        renderProjects();
+      });
+
+      document.getElementById('totalProjectsSpan').textContent = projects.length;
+    }
+
+    function renderFilters() {
+      const filtersContainer = document.getElementById('categoryFilters');
+      filtersContainer.innerHTML = '';
+
+      // All button
+      const allBtn = document.createElement('button');
+      allBtn.className = `filter-btn ${currentFilter === 'all' ? 'active' : ''}`;
+      allBtn.innerHTML = `All <span class="count-pill">${projects.length}</span>`;
+      allBtn.onclick = () => setFilter('all');
+      filtersContainer.appendChild(allBtn);
+
+      // Category buttons
+      categoryOrder.forEach(cat => {
+        const count = projects.filter(p => p.category === cat.id).length;
+        if (count > 0) {
+          const btn = document.createElement('button');
+          btn.className = `filter-btn ${currentFilter === cat.id ? 'active' : ''}`;
+          btn.innerHTML = `${cat.label} <span class="count-pill">${count}</span>`;
+          btn.onclick = () => setFilter(cat.id);
+          filtersContainer.appendChild(btn);
+        }
+      });
+    }
+
+    function setFilter(catId) {
+      currentFilter = catId;
+      renderFilters();
+      renderProjects();
+    }
+
+    function renderProjects() {
+      const container = document.getElementById('projectsContainer');
+      container.innerHTML = '';
+
+      const filtered = projects.filter(p => {
+        const matchesCategory = currentFilter === 'all' || p.category === currentFilter;
+        const matchesSearch = !searchQuery || 
+          p.title.toLowerCase().includes(searchQuery) ||
+          p.description.toLowerCase().includes(searchQuery) ||
+          p.categoryLabel.toLowerCase().includes(searchQuery) ||
+          p.name.toLowerCase().includes(searchQuery);
+        return matchesCategory && matchesSearch;
+      });
+
+      if (filtered.length === 0) {
+        container.innerHTML = `
+          <div class="empty-state">
+            <h3 class="empty-title">No projects found</h3>
+            <p class="empty-desc">Try adjusting your search query or selected category filter.</p>
+          </div>
+        `;
+        return;
+      }
+
+      // Group by category
+      const categoriesToRender = categoryOrder.filter(cat => 
+        currentFilter === 'all' || currentFilter === cat.id
+      );
+
+      categoriesToRender.forEach(cat => {
+        const catProjects = filtered.filter(p => p.category === cat.id);
+        if (catProjects.length === 0) return;
+
+        const section = document.createElement('section');
+        section.className = 'category-section';
+
+        section.innerHTML = `
+          <div class="category-header">
+            <h2 class="category-title">${cat.label}</h2>
+            <span class="category-count">${catProjects.length}</span>
+          </div>
+          <div class="projects-grid">
+            ${catProjects.map(p => `
+              <a href="${p.path}" class="project-card">
+                <div class="card-top">
+                  <div class="card-badges">
+                    <span class="badge badge-category">${p.categoryLabel}</span>
+                    ${p.isFork ? '<span class="badge badge-fork">Fork</span>' : ''}
+                    ${p.isArchived ? '<span class="badge badge-archived">Archived</span>' : ''}
+                  </div>
+                  <h3 class="card-title">${escapeHtml(p.title)}</h3>
+                  <p class="card-desc">${escapeHtml(p.description)}</p>
+                </div>
+                <div class="card-footer">
+                  <span class="card-path">${p.path}</span>
+                  <span class="card-cta">
+                    Open Demo
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                      <path d="M5 12h14M12 5l7 7-7 7"/>
+                    </svg>
+                  </span>
+                </div>
+              </a>
+            `).join('')}
+          </div>
+        `;
+
+        container.appendChild(section);
+      });
+    }
+
+    function escapeHtml(str) {
+      return str.replace(/[&<>'"]/g, 
+        tag => ({
+          '&': '&amp;',
+          '<': '&lt;',
+          '>': '&gt;',
+          "'": '&#39;',
+          '"': '&quot;'
+        }[tag] || tag)
+      );
+    }
+
+    document.addEventListener('DOMContentLoaded', init);
+  </script>
+</body>
+</html>
