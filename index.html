@@ -385,7 +385,7 @@
     <header>
       <div class="header-badge">Static Showcase</div>
       <h1>Consolidated Static Projects</h1>
-      <p class="subtitle">A curated collection of client-side web projects, games, interactive utilities, and UI components.</p>
+      <p class="subtitle">A curated collection of client-side web projects, games, interactive utilities, and landing pages.</p>
     </header>
 
     <section class="controls-wrapper">
@@ -406,49 +406,40 @@
     </main>
 
     <footer>
-      <p>Consolidated repository containing <span id="totalProjectsSpan">11</span> static web projects. Works offline and on GitHub Pages.</p>
+      <p>Consolidated repository containing <span id="totalProjectsSpan">23</span> static web projects. Works offline and on GitHub Pages.</p>
     </footer>
   </div>
 
   <script>
     const projects = [
+      // games (12)
       {
-        name: "rps",
-        title: "Rock Paper Scissors - Avatar Edition",
+        name: "5-x-in-a-row",
+        title: "5 x in a row",
         category: "games",
         categoryLabel: "Games",
-        description: "Interactive Rock Paper Scissors game with Avatar graphics and single/two-player modes.",
-        path: "games/rps/index.html",
+        description: "Classic five-in-a-row grid alignment strategy board game.",
+        path: "games/5-x-in-a-row/index.html",
         isFork: false,
         isArchived: false
       },
       {
-        name: "cross-numbers",
-        title: "Cross Numbers",
+        name: "archery-game",
+        title: "Archery Game",
         category: "games",
         categoryLabel: "Games",
-        description: "Interactive arithmetic crossword puzzle and number calculation board challenge.",
-        path: "games/cross-numbers/index.html",
+        description: "Interactive bow-and-arrow target shooting arcade game.",
+        path: "games/archery-game/index.html",
         isFork: false,
         isArchived: false
       },
       {
-        name: "keyboard-game",
-        title: "Keyboard Game",
+        name: "block-match",
+        title: "Block Stack",
         category: "games",
         categoryLabel: "Games",
-        description: "Speed typing test and keyboard accuracy challenge with customizable speed and live WPM score.",
-        path: "games/keyboard-game/index.html",
-        isFork: false,
-        isArchived: false
-      },
-      {
-        name: "javascript-quiz",
-        title: "JavaScript Quiz",
-        category: "games",
-        categoryLabel: "Games",
-        description: "Timed multiple-choice quiz app testing core JavaScript concepts with modal score review.",
-        path: "games/javascript-quiz/index.html",
+        description: "Color block matching and stacking puzzle game.",
+        path: "games/block-match/index.html",
         isFork: false,
         isArchived: false
       },
@@ -463,12 +454,134 @@
         isArchived: false
       },
       {
-        name: "text-editor",
-        title: "Text Editor",
+        name: "change-math-workout",
+        title: "Change Math Workout",
+        category: "games",
+        categoryLabel: "Games",
+        description: "Speed arithmetic calculation trainer with customizable number changes.",
+        path: "games/change-math-workout/index.html",
+        isFork: false,
+        isArchived: false
+      },
+      {
+        name: "cross-numbers",
+        title: "Cross Numbers",
+        category: "games",
+        categoryLabel: "Games",
+        description: "Interactive arithmetic crossword puzzle and number calculation board challenge.",
+        path: "games/cross-numbers/index.html",
+        isFork: false,
+        isArchived: false
+      },
+      {
+        name: "javascript-quiz",
+        title: "JavaScript Quiz",
+        category: "games",
+        categoryLabel: "Games",
+        description: "Timed multiple-choice quiz app testing core JavaScript concepts with modal score review.",
+        path: "games/javascript-quiz/index.html",
+        isFork: false,
+        isArchived: false
+      },
+      {
+        name: "keyboard-game",
+        title: "Keyboard Game",
+        category: "games",
+        categoryLabel: "Games",
+        description: "Speed typing test and keyboard accuracy challenge with customizable speed and live WPM score.",
+        path: "games/keyboard-game/index.html",
+        isFork: false,
+        isArchived: false
+      },
+      {
+        name: "math-workout",
+        title: "Math Workout",
+        category: "games",
+        categoryLabel: "Games",
+        description: "Interactive math training workout with Day and Night theme modes.",
+        path: "games/math-workout/index.html",
+        isFork: false,
+        isArchived: false
+      },
+      {
+        name: "rps",
+        title: "Rock Paper Scissors - Avatar Edition",
+        category: "games",
+        categoryLabel: "Games",
+        description: "Interactive Rock Paper Scissors game with Avatar graphics and single/two-player modes.",
+        path: "games/rps/index.html",
+        isFork: false,
+        isArchived: false
+      },
+      {
+        name: "snake-game",
+        title: "Snake Game",
+        category: "games",
+        categoryLabel: "Games",
+        description: "Classic retro arcade snake game with score tracking.",
+        path: "games/snake-game/index.html",
+        isFork: false,
+        isArchived: false
+      },
+      {
+        name: "spot-dot",
+        title: "Dots Space",
+        category: "games",
+        categoryLabel: "Games",
+        description: "Reflex and precision dot spotting challenge in space.",
+        path: "games/spot-dot/index.html",
+        isFork: false,
+        isArchived: false
+      },
+      // landing-pages (4)
+      {
+        name: "consultio",
+        title: "Consultio Landing Page",
+        category: "landing-pages",
+        categoryLabel: "Landing Pages",
+        description: "Business consulting and software services agency landing page template.",
+        path: "landing-pages/consultio/index.html",
+        isFork: false,
+        isArchived: false
+      },
+      {
+        name: "demo-law-firm",
+        title: "Halim Law Firm Landing Page",
+        category: "landing-pages",
+        categoryLabel: "Landing Pages",
+        description: "Modern law firm practice and attorney showcase landing page template.",
+        path: "landing-pages/demo-law-firm/index.html",
+        isFork: false,
+        isArchived: false
+      },
+      {
+        name: "law-firm",
+        title: "Lintense Law Consulting",
+        category: "landing-pages",
+        categoryLabel: "Landing Pages",
+        description: "Legal services and corporate law consulting landing page template.",
+        path: "landing-pages/law-firm/index.html",
+        isFork: false,
+        isArchived: false
+      },
+      {
+        name: "quivox-studio",
+        title: "Quivox Studio",
+        category: "landing-pages",
+        categoryLabel: "Landing Pages",
+        description: "Agency and product development studio landing page showcase.",
+        path: "landing-pages/quivox-studio/index.html",
+        isFork: false,
+        isArchived: false
+      },
+      // tools-utilities (4)
+      {
+        name: "get-a-joke",
+        title: "Get a Joke",
         category: "tools-utilities",
         categoryLabel: "Tools & Utilities",
-        description: "Browser-based rich text editor with speech synthesis, word tools, and local file saving.",
-        path: "tools-utilities/text-editor/index.html",
+        description: "Minimalist on-demand humor generator fetching random jokes with a clean user interface.",
+        path: "tools-utilities/get-a-joke/index.html",
         isFork: false,
         isArchived: false
       },
@@ -483,15 +596,26 @@
         isArchived: false
       },
       {
-        name: "get-a-joke",
-        title: "Get a Joke",
+        name: "list-of-ai-tools",
+        title: "List of AI Tools",
         category: "tools-utilities",
         categoryLabel: "Tools & Utilities",
-        description: "Minimalist on-demand humor generator fetching random jokes with a clean user interface.",
-        path: "tools-utilities/get-a-joke/index.html",
+        description: "Directory and searchable reference of top artificial intelligence tools.",
+        path: "tools-utilities/list-of-ai-tools/index.html",
         isFork: false,
         isArchived: false
       },
+      {
+        name: "text-editor",
+        title: "Text Editor",
+        category: "tools-utilities",
+        categoryLabel: "Tools & Utilities",
+        description: "Browser-based rich text editor with speech synthesis, word tools, and local file saving.",
+        path: "tools-utilities/text-editor/index.html",
+        isFork: false,
+        isArchived: false
+      },
+      // ui-components-demos (3)
       {
         name: "flipoff",
         title: "FlipOff. — Split-Flap Display Emulator",
@@ -529,6 +653,7 @@
 
     const categoryOrder = [
       { id: 'games', label: 'Games' },
+      { id: 'landing-pages', label: 'Landing Pages' },
       { id: 'tools-utilities', label: 'Tools & Utilities' },
       { id: 'ui-components-demos', label: 'UI Components & Demos' }
     ];
@@ -662,4 +787,3 @@
   </script>
 </body>
 </html>
-
